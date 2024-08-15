@@ -48,7 +48,7 @@
 }
 
 .nav__link:hover {
-    color: #2b48cd;
+    color: #18191b;
 }
 
 /* Dropdown Item */
@@ -78,10 +78,6 @@
     white-space: nowrap;
 }
 
-.dropdown__link:hover {
-    background-color: #555;
-}
-
 /* Nav Toggle */
 .nav__toggle {
     display: none;
@@ -96,12 +92,10 @@
         top: 100px;
         left: -100%;
         background-color: #337285;
-        width: 100%;
+        width: 45%;
         height: calc(70vh - 80px);
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
         transition: left 0.3s ease;
     }
 
