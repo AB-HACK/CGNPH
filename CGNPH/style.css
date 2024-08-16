@@ -7,15 +7,13 @@
 
 body {
     overflow: hidden;
-    background-color: rgba(0, 0, 0, 0.7); /* Black with 70% opacity */
-    min-height: 100hv;
-    background-image: url('media/312092.jpg'); /* Add your background image */
-    background-size: cover; /* Make sure the background image covers the whole page */
+    min-height: 100vh;
+    background-image: url('media/312092.jpg');
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position: center; /* Center the background image */
-    color: white; /* Optional: Set text color to white for better contrast */
+    background-position: center;
+    color: white; 
 }
-
 
 /* Navigation Container */
 .nav-container {
