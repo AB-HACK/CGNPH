@@ -1,4 +1,4 @@
-/* Basic Reset
+/* Basic Reset */
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +6,7 @@
 }
 
 /* Navigation Container */
-.header {
+.header{
     position: fixed;
     width: 100%;
     z-index: 1000;
@@ -67,7 +67,7 @@
 /* Rotate dropdown icon */
 .dropdown__item:hover .dropdown__arrow {
     transform: rotate(180deg);
-}
+  }
 
 .dropdown__menu {
     display: none;
@@ -88,8 +88,6 @@
 .dropdown__menu.show {
     display: block;
     /* Make the sidebar visible */
-    transform: translateX(0);
-    /* Slide into view */
 }
 
 .dropdown__item:hover .dropdown__menu {
@@ -220,7 +218,7 @@ body {
 }
 
 /* DiVISIONS */
-.divisions {
+.divisions{
     background-color: #2d7292de;
     color: white;
     justify-content: center;
