@@ -6,7 +6,7 @@
 }
 
 /* Navigation Container */
-.header{
+.header {
     position: fixed;
     width: 100%;
     z-index: 1000;
@@ -59,6 +59,14 @@
     color: #18191b;
 }
 
+/* Nav Toggle */
+.nav__toggle {
+    display: none;
+    background-color: #337285;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
 /* Dropdown Item */
 .dropdown__item {
     position: relative;
@@ -67,7 +75,7 @@
 /* Rotate dropdown icon */
 .dropdown__item:hover .dropdown__arrow {
     transform: rotate(180deg);
-  }
+}
 
 .dropdown__menu {
     display: none;
@@ -75,10 +83,8 @@
     top: 100%;
     width: 300px;
     background-color: #2d729285;
-    transition: transform 0.3s ease;
-    /* Smooth transition */
-    transform: translateX(50%);
-    /* Hidden off-screen */
+    transition: transform 0.3s ease; /* Smooth transition */
+    transform: translateX(50%); /* Hidden off-screen */
     padding: 10px 0;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
     z-index: 99;
@@ -100,10 +106,8 @@
     white-space: nowrap;
 }
 
-/* Nav Toggle */
-.nav__toggle {
-    display: none;
-    cursor: pointer;
+.dropdown__link:hover {
+    background-color: #1f5f75;
 }
 
 /* Responsive Styles */
@@ -115,7 +119,7 @@
         top: 100px;
         left: -100%;
         background-color: #337285;
-        width: 100%;
+        width: 50%;
         height: calc(100vh - 80px);
         display: flex;
         flex-direction: column;
@@ -149,9 +153,11 @@
     .dropdown__menu {
         position: static;
         box-shadow: none;
-        display: none; /* Hidden by default */
+        display: none;
+        /* Hidden by default */
         position: absolute;
-        top: 100%; /* Align just below the parent */
+        top: 100%;
+        /* Align just below the parent */
         left: 0;
         background-color: #2d729285;
         padding: 10px 0;
@@ -162,8 +168,14 @@
     }
 
     .dropdown__link {
+        display: block;
         padding: 15px 20px;
     }
+
+    .dropdown__link:hover {
+        background-color: #1f5f75;
+    }
+    
 }
 
 /* Nav Burger Animation */
@@ -227,7 +239,7 @@ body {
 }
 
 /* DiVISIONS */
-.divisions{
+.divisions {
     background-color: #2d7292de;
     color: white;
     justify-content: center;
