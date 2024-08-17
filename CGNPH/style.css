@@ -243,5 +243,5 @@ body {
     background-color: #2d7292de;
     color: white;
     justify-content: center;
-    display: flex;
+    /* display: flex; */
 }
