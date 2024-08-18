@@ -30,11 +30,14 @@ body {
 }
 
 .nav-container {
-    position: fixed;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    /* position: fixed; */
     background-color: #2d7292de;
     padding: 20px;
-    position: relative;
-    z-index: 100;
+    /* position: relative; */
+    z-index: 1000;
 }
 
 /* Nav Data */
