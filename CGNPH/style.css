@@ -213,7 +213,8 @@ body {
         padding: 15px;
         text-align: center;
     } */
-    /* .features h2 {
+     
+    .features h2 {
         font-size: 30px;
     }
 
@@ -245,7 +246,7 @@ body {
 
     label::after {
         font-size: 22px;
-    } */
+    }
 }
 
 /* Nav Burger Animation */
