@@ -345,6 +345,7 @@ body {
     display: block;
     width: 90%;
     margin: auto;
+    border-radius: 10%;
 }
 
 .features h2 {
