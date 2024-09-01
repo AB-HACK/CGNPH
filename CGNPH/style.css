@@ -361,9 +361,13 @@ body {
     color: #777;
 }
 .footer h2{
-    font-size: 18px;
-    font-weight: 400;
-    margin-bottom: 30px;
+    font-size: 25px;
+    font-weight: 0;
+    margin-bottom: 15px;
+}
+.footer h3{
+    font-size: 15px;
+    margin-bottom: 10px;
 }
 .footer .col{
     flex-basis: 25%;
