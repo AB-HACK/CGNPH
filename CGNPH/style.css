@@ -247,6 +247,10 @@ body {
     label::after {
         font-size: 22px;
     }
+
+    .footer{
+        
+    }
 }
 
 /* Nav Burger Animation */
