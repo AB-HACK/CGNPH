@@ -230,7 +230,7 @@ body {
     .features .row {
         padding: 10px 0;
     }
-    
+
     label::after {
         font-size: 22px;
     }
