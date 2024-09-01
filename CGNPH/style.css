@@ -355,6 +355,7 @@ body {
 }
 
 .footer{
+    background-color: white;
     padding: 50px 15% 10px;
     border-top: 6px solid #333;
     color: #777;
@@ -385,6 +386,9 @@ body {
     padding: 10px 20px;
     border-radius: 3px;
 }
+.footer .nav__link i(
+    .text-col::before:gray;
+)
 .copyright-txt{
     font-size: 14px;
     margin-top: 20px;
