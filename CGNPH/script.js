@@ -40,4 +40,19 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+new Swiper('.swiper', {
+    loop: true,
+
+    // Pagination buttens
+    pagination: {
+        el: '.swiper-pagination',
+    },
+
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+});
+
 

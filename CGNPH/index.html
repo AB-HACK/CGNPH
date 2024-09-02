@@ -9,6 +9,8 @@
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+    <!-- linking swiperJS css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -62,6 +64,7 @@
 
     </section>
 
+    <!-- HOME -->
     <section class="home">
         <div class="home-content">
 
@@ -76,6 +79,7 @@
 
     </section>
 
+    <!-- FEATURES -->
     <section>
         <div class="features">
 
@@ -110,10 +114,11 @@
 
     </section>
 
-    <section class="c-container">
-        <div class="card-wrapper">
-            <ul class="card-list">
-                <li class="card-item">
+    <!-- CARDS -->
+    <section class="c-container swiper">
+        <div class="card-wrapper ">
+            <ul class="card-list ">
+                <li class="card-item swiper-slide">
                     <a href="#" class="card-link">
                         <img src="media/genetics.jpeg" alt="Card image" class="card-image">
                         <p class="badge CBGL">CBGL</p>
@@ -123,7 +128,7 @@
                         </button>
                     </a>
                 </li>
-                <li class="card-item">
+                <li class="card-item swiper-slide">
                     <a href="#" class="card-link">
                         <img src="media/marintime.jpeg" alt="Card image" class="card-image">
                         <p class="badge IMS">IMS</p>
@@ -133,7 +138,7 @@
                         </button>
                     </a>
                 </li>
-                <li class="card-item">
+                <li class="card-item swiper-slide">
                     <a href="#" class="card-link">
                         <img src="media/nanotech.jpg" alt="Card image" class="card-image">
                         <p class="badge NTL">NTL</p>
@@ -143,7 +148,7 @@
                         </button>
                     </a>
                 </li>
-                <li class="card-item">
+                <li class="card-item swiper-slide">
                     <a href="#" class="card-link">
                         <img src="media/ai-robot.jpeg" alt="Card image" class="card-image">
                         <p class="badge Ai-R">Ai & R</p>
@@ -153,7 +158,7 @@
                         </button>
                     </a>
                 </li>
-                <li class="card-item">
+                <li class="card-item swiper-slide">
                     <a href="#" class="card-link">
                         <img src="media/molecular.jpeg" alt="Card image" class="card-image">
                         <p class="badge MFL">MFL</p>
@@ -163,7 +168,7 @@
                         </button>
                     </a>
                 </li>
-                <li class="card-item">
+                <li class="card-item swiper-slide">
                     <a href="#" class="card-link">
                         <img src="media/genomics.jpeg" alt="Card image" class="card-image">
                         <p class="badge CGNPH">CGNPH</p>
@@ -174,22 +179,25 @@
                         </button>
                     </a>
                 </li>
-                <li class="card-item">
+                <li class="card-item swiper-slide">
                     <a href="#" class="card-link">
-                        <img src="media/COMPLETE-LOGO-1536x335.png" alt="Card image" class="card-image">
+                        <img src="media/gis.png" alt="Card image" class="card-image">
                         <p class="badge GIS">COESESI GIS</p>
-                        <h2 class="card-title">Centre for Genomics of Non-Communicable Diseases and Personalized
-                            Healthcare</h2>
+                        <h2 class="card-title">Centre of Excellence for Sustainable Environment and Social....</h2>
                         <button class="card-button material-symbols-rounded">
                             arrow_forward
                         </button>
                     </a>
                 </li>
             </ul>
-        </div>
 
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
     </section>
 
+    <!-- FOOTER -->
     <section class="footer">
         <div> <a href="#" class="nav__logo">
                 <img src="media/IMG1.png" alt="">
@@ -239,6 +247,10 @@
 
     </section>
 
+    <!-- linking swiperJS Script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- linking custom script -->
     <script src="script.js"></script>
 </body>
 
