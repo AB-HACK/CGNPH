@@ -40,12 +40,15 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-new Swiper('.swiper', {
+new Swiper('.card-wrapper', {
     loop: true,
+    spaceBetween: 30,
 
-    // Pagination buttens
+    // Pagination bullets
     pagination: {
         el: '.swiper-pagination',
+        clickable: true,
+        dynamicBullets: true,
     },
 
     // Navigation arrows
@@ -53,6 +56,19 @@ new Swiper('.swiper', {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
+
+    // Responsive breakpoint
+    breakpoint: {
+        0:{
+            sliderPerView: 1
+        },
+        768:{
+            sliderPerView: 2
+        },
+        1024:{
+            sliderPerView: 3
+        },
+    }
 });
 
 
