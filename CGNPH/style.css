@@ -394,6 +394,35 @@ body {
     border-radius: 50px;
 }
 
+.card-list .card-link .badge.CBGL{
+    color: #b22485;
+    background: #f7dff5;
+}
+.card-list .card-link .badge.IMS{
+    color:#b25a2b;
+    background: #ffe3d2;
+}
+.card-list .card-link .badge.NTL{
+    color: #205c20;
+    background: #d6f8d6;
+}
+.card-list .card-link .badge.Ai-R{
+    color: #856404;
+    background: #fff3cd;
+}
+.card-list .card-link .badge.MFL{
+    color: #b22485;
+    background: #f7dff5;
+}
+.card-list .card-link .badge.CGNPH{
+    color: #b25a2b;
+    background: #f7dff5;
+}
+.card-list .card-link .badge.GIS{
+    color: #205c20;
+    background: #d6f8d6;
+}  
+
 .card-list .card-link .card-title{
     font-size: 1.19rem;
     color: #000;
