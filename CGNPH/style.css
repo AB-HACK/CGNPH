@@ -354,14 +354,29 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
-    background: linear-gradient(#eceffe, #ced6fb);
+    min-height: 80vh;
+    background: linear-gradient(#248b9bb4, #2d7292a1);
+    border-top: 6px solid #333;
+}
+
+.card-list .card-item{
+    list-style: none;
 }
 
 .card-list .card-item .card-link {
     width: 400px;
     display: block;
+    background: #fff;
+    padding: 18px;
+    border-radius: 12px;
+    text-decoration: none;
+}
 
+.card-list .card-link .card-image{
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
 .footer {
