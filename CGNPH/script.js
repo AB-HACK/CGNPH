@@ -42,6 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 new Swiper('.card-wrapper', {
     loop: true,
+    slidesPerView: 3,
     spaceBetween: 30,
 
     // Pagination bullets

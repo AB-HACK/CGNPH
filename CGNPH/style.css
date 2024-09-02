@@ -360,12 +360,28 @@ body {
     border-top: 6px solid #333;
 }
 
-.card-list .card-item{
+.card-wrapper {
+    padding: 20px;
+    overflow: hidden;
+}
+
+.card-list {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    padding: 0;
+    margin-left: 10px;
+}
+
+.card-list .card-item {
     list-style: none;
+    flex: 0 0 auto;
 }
 
 .card-list .card-item .card-link {
-    width: 400px;
+    user-select: none;
+    /* width: 100%;
+    width: 400px; */
     display: block;
     background: #2d7292de;
     padding: 18px;
@@ -376,14 +392,15 @@ body {
     transition: 0.2 ease;
 }
 
-.card-list .card-link .card-image{
+.card-list .card-link .card-image {
     width: 100%;
+    height: auto;
     aspect-ratio: 16 / 9;
     object-fit: cover;
     border-radius: 10px;
 }
 
-.card-list .card-link .badge{
+.card-list .card-link .badge {
     color: #5372f0;
     padding: 8px 16px;
     font-size: 0.95rem;
@@ -394,42 +411,48 @@ body {
     border-radius: 50px;
 }
 
-.card-list .card-link .badge.CBGL{
+.card-list .card-link .badge.CBGL {
     color: #b22485;
     background: #f7dff5;
 }
-.card-list .card-link .badge.IMS{
-    color:#b25a2b;
+
+.card-list .card-link .badge.IMS {
+    color: #b25a2b;
     background: #ffe3d2;
 }
-.card-list .card-link .badge.NTL{
+
+.card-list .card-link .badge.NTL {
     color: #205c20;
     background: #d6f8d6;
 }
-.card-list .card-link .badge.Ai-R{
+
+.card-list .card-link .badge.Ai-R {
     color: #856404;
     background: #fff3cd;
 }
-.card-list .card-link .badge.MFL{
+
+.card-list .card-link .badge.MFL {
     color: #b22485;
     background: #f7dff5;
 }
-.card-list .card-link .badge.CGNPH{
+
+.card-list .card-link .badge.CGNPH {
     color: #b25a2b;
     background: #f7dff5;
 }
-.card-list .card-link .badge.GIS{
+
+.card-list .card-link .badge.GIS {
     color: #205c20;
     background: #d6f8d6;
-}  
+}
 
-.card-list .card-link .card-title{
+.card-list .card-link .card-title {
     font-size: 1.19rem;
     color: #000;
     font-weight: 600;
 }
 
-.card-list .card-link .card-button{
+.card-list .card-link .card-button {
     height: 35px;
     width: 35px;
     color: #5372f0;
