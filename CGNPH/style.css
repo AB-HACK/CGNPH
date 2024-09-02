@@ -347,6 +347,7 @@ body {
     font-size: 20px;
 }
 
+/* ---- Card seection starts ---- */
 /* import google font - intern */
 @import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap');
 
@@ -378,6 +379,8 @@ body {
     object-fit: cover;
     border-radius: 10px;
 }
+
+/* ---- Card seection ends ---- */
 
 .footer {
     background-color: white;
