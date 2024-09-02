@@ -380,6 +380,15 @@ body {
     border-radius: 10px;
 }
 
+.card-list .card-link .badge{
+    color: #5372f0;
+    padding: 8px 16px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin: 16px 0 18px;
+    background: #dde4ff;
+}
+
 /* ---- Card seection ends ---- */
 
 .footer {
