@@ -1,5 +1,6 @@
 /* Basic Reset */
 * {
+    font-family: "Inter", sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -344,6 +345,23 @@ body {
 
 .features {
     font-size: 20px;
+}
+
+/* import google font - intern */
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap');
+
+.c-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(#eceffe, #ced6fb);
+}
+
+.card-list .card-item .card-link {
+    width: 400px;
+    display: block;
+
 }
 
 .footer {
