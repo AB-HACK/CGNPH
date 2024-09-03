@@ -42,8 +42,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
 new Swiper('.card-wrapper', {
     loop: true,
-    slidesPerView: 3,
-    spaceBetween: 30,
+    slidesPerView: 2,
+    spaceBetween: 10,
 
     // Pagination bullets
     pagination: {
