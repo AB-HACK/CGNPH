@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-
+// ------THIS IS FOR SLIDE-----
 // new Swiper('.card-wrapper', {
 //     loop: true,
 //     slidesPerView: 3,
