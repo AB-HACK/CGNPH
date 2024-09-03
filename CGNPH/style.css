@@ -461,10 +461,7 @@ body {
     transition: 0.4s ease;
 }
 
-.card-list .card-link:hover .card-button {
-    color: #fff;
-    background: #5372f0;
-} */
+
 
 .c-container {
     display: flex;
