@@ -236,7 +236,19 @@ body {
         font-size: 22px;
     }
 
+    .card-list {
+        justify-content: center;
+        /* Center the cards */
+    }
+
+    .card-list .card-item {
+        flex: 1 1 100%;
+        /* Make each card take up full width */
+        max-width: 100%;
+        /* Ensure the cards are full width */
+    }
 }
+
 
 /* Nav Burger Animation */
 .nav__burger,
@@ -350,8 +362,10 @@ body {
 /* ---- Card seection starts ---- */
 .c-container {
     display: flex;
-    align-items: center; /* Center cards vertically */
-    justify-content: center; /* Center cards horizontally */
+    align-items: center;
+    /* Center cards vertically */
+    justify-content: center;
+    /* Center cards horizontally */
     min-height: 80vh;
     background: linear-gradient(#248b9b4d, #2d72923e);
     border-top: 6px solid #333;
@@ -365,18 +379,23 @@ body {
 
 .card-list {
     display: flex;
-    flex-wrap: wrap; /* Allow cards to wrap to the next line */
+    flex-wrap: wrap;
+    /* Allow cards to wrap to the next line */
     gap: 20px;
     padding: 0;
     margin: 0 auto;
-    justify-content: center; /* Center the cards horizontally */
-    align-items: center; /* Center the cards vertically */
+    justify-content: center;
+    /* Center the cards horizontally */
+    align-items: center;
+    /* Center the cards vertically */
 }
 
 .card-list .card-item {
     list-style: none;
-    flex: 1 1 300px; /* Adjust the card size based on container width */
-    max-width: 300px; /* Ensure the cards don't get too large */
+    flex: 1 1 300px;
+    /* Adjust the card size based on container width */
+    max-width: 300px;
+    /* Ensure the cards don't get too large */
 }
 
 .card-list .card-link {
@@ -448,7 +467,8 @@ body {
     font-size: 1.19rem;
     color: #000;
     font-weight: 600;
-    text-align: center; /* Center the text */
+    text-align: center;
+    /* Center the text */
 }
 
 .card-list .card-link .card-button {
@@ -456,7 +476,8 @@ body {
     width: 35px;
     color: #5372f0;
     border-radius: 50%;
-    margin: 30px auto 5px; /* Center the button */
+    margin: 30px auto 5px;
+    /* Center the button */
     background: none;
     cursor: pointer;
     border: 2px solid #5372f0;
