@@ -489,9 +489,9 @@ body {
     color: #fff;
     background: #5372f0;
 }
-
 /* ---- Card seection ends ---- */
 
+/* -----footer section starts---- */
 .footer {
     background-color: white;
     padding: 50px 15% 10px;
@@ -540,3 +540,4 @@ body {
     margin-top: 20px;
     margin-bottom: 10px;
 }
+/* ------footer section ends----- */
