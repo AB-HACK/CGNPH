@@ -365,16 +365,16 @@ body {
 
 .card-list {
     display: flex;
-    flex-wrap: wrap; /* Allow cards to wrap to the next line */
+    flex-wrap: wrap;
     gap: 20px;
     padding: 0;
     margin: 0 auto;
-    justify-content: center; /* Center the cards */
+    justify-content: center;
 }
 
 .card-list .card-item {
     list-style: none;
-    flex: 1 1 300px; /* Adjust the card size based on container width */
+    flex: 1 1 300px;
 }
 
 .card-list .card-link {
