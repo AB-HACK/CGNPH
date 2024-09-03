@@ -430,117 +430,69 @@ body {
 /* ------footer section ends----- */
 
 /* Responsive Styles */
-@media screen and (max-width: 800px) {
+/* General Styles as previously defined */
 
-    /* Hide nav menu initially */
+@media (max-width: 768px) {
     .nav__menu {
-        position: absolute;
-        top: 100px;
-        left: -100%;
-        background-color: #337285;
-        width: 50%;
-        height: calc(100vh - 80px);
-        display: flex;
+        display: none; /* Hidden by default */
         flex-direction: column;
-        transition: left 0.3s ease;
-    }
-
-    /* Show nav menu on toggle */
-    .nav__menu.show {
+        position: fixed;
+        top: 0;
         left: 0;
-    }
-
-    /* Show nav toggle icon */
-    .nav__toggle {
-        display: block;
-    }
-
-    /* Style nav links for mobile */
-    .nav__list {
-        flex-direction: column;
         width: 100%;
-        transition: all .50s ease;
+        height: 100vh;
+        background-color: rgba(45, 114, 146, 0.85);
+        z-index: 999;
+        padding-top: 80px;
+        transition: transform 0.3s ease;
+        transform: translateX(-100%);
+    }
+
+    .nav__menu.open {
+        display: flex;
+        transform: translateX(0);
     }
 
     .nav__link {
         padding: 20px;
         text-align: center;
-        width: 100%;
+        font-size: 18px;
     }
 
-    /* Style dropdown menu for mobile */
+    .nav__toggle {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
     .dropdown__menu {
         position: static;
+        transform: none;
+        width: 100%;
         box-shadow: none;
-        display: none;
-        /* Hidden by default */
-        position: absolute;
-        top: 100%;
-        /* Align just below the parent */
-        left: 0;
-        background-color: #2d729285;
-        padding: 10px 0;
-        border-radius: 5px;
-        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
-        z-index: 99;
-        min-width: 180px;
     }
 
-    .dropdown__link {
+    .dropdown__item:hover .dropdown__menu {
         display: block;
-        padding: 15px 20px;
+        background-color: rgba(45, 114, 146, 0.95);
     }
 
-    .dropdown__link:hover {
-        background-color: #1f5f75;
+    .nav__data {
+        flex-direction: column;
+        align-items: flex-start;
     }
 
-    /* 
-    .home-content h1{
-        font-size: 18px;
-        line-height: 1.3;
+    .nav__logo img {
+        height: 45px;
     }
 
-    .home-content h3{
+    h4 {
         font-size: 14px;
-        line-height: 1.5;
+        margin: 10px 0;
     }
 
-    .home-content{
-        padding: 15px;
-        text-align: center;
-    } */
-
-    .features h2 {
-        font-size: 30px;
-    }
-
-    .features p {
-        font-size: 15px;
-    }
-
-    .row:nth-child(1),
-    .row:nth-child(2) {
-        flex-direction: column-reverse;
-    }
-
-    .features .row {
-        padding: 10px 0;
-    }
-
-    label::after {
-        font-size: 22px;
-    }
-
-    .card-list {
-        justify-content: center;
-        /* Center the cards */
-    }
-
-    .card-list .card-item {
-        flex: 1 1 100%;
-        /* Make each card take up full width */
-        max-width: 100%;
-        /* Ensure the cards are full width */
+    .home {
+        padding-top: 140px; /* Increase padding for mobile */
     }
 }
