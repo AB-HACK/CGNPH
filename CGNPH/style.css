@@ -20,19 +20,6 @@ body {
 }
 
 /* Navigation Container */
-body {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    overflow: auto;
-    align-items: center;
-    min-height: 100vh;
-    background-color: #18191b;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    color: white;
-}
-
-/* Navigation Container */
 .header {
     position: relative;
     width: 100%;
@@ -62,7 +49,7 @@ body {
 
 /* Nav Menu */
 .nav__menu {
-    display: none;
+    display: flex;
     justify-content: space-between;
     align-items: center;
 }
@@ -438,9 +425,14 @@ body {
 /* General Styles as previously defined */
 
 @media (max-width: 768px) {
+    .header {
+        width: 100%;
+        height: auto;
+        position: static;
+    }
     .nav__menu {
         display: none; /* Hidden by default */
-        flex-direction: row;
+        flex-direction: column;
     }
 
     .nav__menu.show {
@@ -506,5 +498,88 @@ body {
     }
     .features .row{
          padding: 10px 0;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .container {
+        margin-inline: 10px;
+    }
+
+    .nav__link {
+        padding-inline: 10px;
+    }
+}
+
+/* For large devices */
+@media screen and (min-width: 1118px) {
+    .container {
+        margin-inline: auto;
+    }
+
+    .nav__list {
+        height: 100%;
+        display: flex;
+        column-gap: 48px;
+    }
+
+    .nav__toggle {
+        display: none;
+    }
+
+    .nav__link {
+        height: 100%;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        column-gap: 4px;
+    }
+
+    .nav__link:hover {
+        background-color: transparent;
+    }
+
+    .dropdown__item,
+    .dropdown__subitem {
+        position: relative;
+    }
+
+    .dropdown__menu,
+    .dropdown__submenu {
+        max-height: initial;
+        overflow: initial;
+        position: absolute;
+        left: 0;
+        top: 60px;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s, top 0.3s;
+    }
+
+    .dropdown__link,
+    .dropdown__sublink {
+        padding: 10px 56px;
+    }
+
+    .dropdown__submenu {
+        position: absolute;
+        left: 100%;
+        top: 8px;
+    }
+
+    /* Show dropdown menu */
+    .dropdown__item:hover .dropdown__menu {
+        opacity: 1;
+        top: 50px;
+        pointer-events: initial;
+        transition: top 0.3s;
+    }
+
+    /* Show dropdown submenu */
+    .dropdown__subitem:hover > .dropdown__submenu {
+        opacity: 1;
+        top: 0;
+        pointer-events: initial;
+        transition: top 0.3s;
     }
 }
