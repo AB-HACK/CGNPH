@@ -487,6 +487,10 @@ body {
         padding-top: 140px; /* Increase padding for mobile */
     }
 
+    .text-col, .img-col{
+        flex-basis: 100%;
+    }
+    
     .features h2{
         font-size: 30px;
     }
