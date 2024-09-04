@@ -91,7 +91,7 @@ body {
 }
 
 .dropdown__menu {
-    display: none;
+    display: flex;
     position: fixed;
     top: 100%;
     width: 300px;
