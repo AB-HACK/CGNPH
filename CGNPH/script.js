@@ -43,37 +43,3 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-// ------THIS IS FOR SLIDE-----
-// new Swiper('.card-wrapper', {
-//     loop: true,
-//     slidesPerView: 3,
-//     spaceBetween: 10,
-
-//     // Pagination bullets
-//     pagination: {
-//         el: '.swiper-pagination',
-//         clickable: true,
-//         dynamicBullets: true,
-//     },
-
-//     // Navigation arrows
-//     navigation: {
-//         nextEl: '.swiper-button-next',
-//         prevEl: '.swiper-button-prev',
-//     },
-
-//     // Responsive breakpoint
-//     breakpoint: {
-//         0:{
-//             sliderPerView: 1
-//         },
-//         768:{
-//             sliderPerView: 2
-//         },
-//         1024:{
-//             sliderPerView: 3
-//         },
-//     }
-// });
-
-
