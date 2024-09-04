@@ -34,11 +34,13 @@ body {
 
 /* Navigation Container */
 .header {
+    position: relative;
     width: 100%;
+    z-index: 1000;
 }
 
 .nav-container {
-    position: fixed;
+    display: flex;
     top: 0;
     width: 100%;
     background-color: #2d7292de;
@@ -61,8 +63,8 @@ body {
 /* Nav Menu */
 .nav__menu {
     display: none;
-    /* justify-content: space-between;
-    align-items: center; */
+    justify-content: space-between;
+    align-items: center;
 }
 .nav__menu.open {
     display: flex; /* or block, based on your layout */
@@ -438,6 +440,7 @@ body {
 @media (max-width: 768px) {
     .nav__menu {
         display: none; /* Hidden by default */
+        flex-direction: row;
     }
 
     .nav__menu.show {

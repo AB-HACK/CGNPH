@@ -1,14 +1,13 @@
-
 document.addEventListener("DOMContentLoaded", function () {
     // Get the elements
     const navToggle = document.getElementById('nav-toggle');
     const navMenu = document.getElementById('nav-menu');
     const dropdownItems = document.querySelectorAll('.dropdown__item');
-    const dropdownMenus = document.querySelectorAll('.dropdown__menu');
+    // const dropdownMenus = document.querySelectorAll('.dropdown__menu');
 
     // Toggle the main nav menu
     navToggle.addEventListener('click', function () {
-        navMenu.classList.toggle('open');
+        navMenu.classList.toggle('show');
         navToggle.classList.toggle('open');
     });
 
@@ -19,27 +18,25 @@ document.addEventListener("DOMContentLoaded", function () {
 
             // Close other dropdown menus if open
             dropdownMenus.forEach(menu => {
-                if (menu !== this.querySelector('.dropdown__menu')) {
+                if (menu !== item.querySelector('.dropdown__menu')) {
                     menu.classList.remove('show');
                 }
             });
 
-            // Toggle the dropdown menu display for the clicked item
-            const menu = this.querySelector('.dropdown__menu');
+            // Toggle the dropdown menu for the clicked item
+            const menu = item.querySelector('.dropdown__menu');
             menu.classList.toggle('show');
         });
     });
 
-    // Close the navbar if a click happens outside of it
+    // Close the navbar and dropdowns if a click happens outside of it
     document.addEventListener('click', function (e) {
-        // Check if the click happened outside the navbar and toggle button
         if (!navMenu.contains(e.target) && !navToggle.contains(e.target)) {
-            navMenu.classList.remove('open'); // Close the navbar
+            navMenu.classList.remove('show'); // Close the navbar
             navToggle.classList.remove('open'); // Reset the toggle button
 
-            // Close all dropdown menus
             dropdownMenus.forEach(menu => {
-                menu.classList.remove('show');
+                menu.classList.remove('show'); // Close all dropdowns
             });
         }
     });
