@@ -60,9 +60,12 @@ body {
 
 /* Nav Menu */
 .nav__menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: none;
+    /* justify-content: space-between;
+    align-items: center; */
+}
+.nav__menu.open {
+    display: flex; /* or block, based on your layout */
 }
 
 /* Nav List */
@@ -435,22 +438,10 @@ body {
 @media (max-width: 768px) {
     .nav__menu {
         display: none; /* Hidden by default */
-        flex-direction: column;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100vh;
-        background-color: rgba(45, 114, 146, 0.85);
-        z-index: 999;
-        padding-top: 80px;
-        transition: transform 0.3s ease;
-        transform: translateX(-100%);
     }
 
-    .nav__menu.open {
+    .nav__menu.show {
         display: flex;
-        transform: translateX(0);
     }
 
     .nav__link {

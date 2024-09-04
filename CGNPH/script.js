@@ -1,3 +1,4 @@
+
 document.addEventListener("DOMContentLoaded", function () {
     // Get the elements
     const navToggle = document.getElementById('nav-toggle');
@@ -7,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Toggle the main nav menu
     navToggle.addEventListener('click', function () {
-        navMenu.classList.toggle('show');
+        navMenu.classList.toggle('open');
         navToggle.classList.toggle('open');
     });
 
@@ -23,10 +24,9 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
             });
 
-            // Toggle the sidebar display for the clicked dropdown
+            // Toggle the dropdown menu display for the clicked item
             const menu = this.querySelector('.dropdown__menu');
             menu.classList.toggle('show');
-            menu.classList.toggle('sidebar');
         });
     });
 
@@ -34,11 +34,17 @@ document.addEventListener("DOMContentLoaded", function () {
     document.addEventListener('click', function (e) {
         // Check if the click happened outside the navbar and toggle button
         if (!navMenu.contains(e.target) && !navToggle.contains(e.target)) {
-            navMenu.classList.remove('show'); // Close the navbar
+            navMenu.classList.remove('open'); // Close the navbar
             navToggle.classList.remove('open'); // Reset the toggle button
+
+            // Close all dropdown menus
+            dropdownMenus.forEach(menu => {
+                menu.classList.remove('show');
+            });
         }
     });
 });
+
 
 // ------THIS IS FOR SLIDE-----
 // new Swiper('.card-wrapper', {
