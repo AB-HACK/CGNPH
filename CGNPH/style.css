@@ -467,7 +467,19 @@ body {
 
 /* Responsive Styles */
 /* General Styles as previously defined */
+@media (max-width: 480px) {
+    .nav__link {
+        padding: 8px 12px; /* Adjust padding for smaller screens */
+    }
 
+    .dropdown__menu {
+        width: 100%; /* Make dropdown full width on small screens */
+    }
+
+    .dropdown__link {
+        padding: 12px 16px; /* Adjust padding for smaller screens */
+    }
+}
 @media (max-width: 768px) {
     .header {
         width: 100%;
@@ -536,7 +548,7 @@ body {
 
     .features h2 {
         font-size: 30px;
-    }
+    }  
 
     .features p {
         font-size: 15px;
