@@ -91,20 +91,25 @@ body {
 }
 
 .dropdown__menu {
-    display: flex;
-    position: fixed;
-    top: 100%;
+    display: none;
+    position: absolute; /* Adjust position to suit your layout */
+    top: 100%; /* Align with the bottom of the dropdown item */
+    left: 0; /* Align with the left edge of the dropdown item */
     width: 300px;
     background-color: #2d729285;
-    transition: transform 0.3s ease;
-    transform: translateX(50%);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    transform: translateY(-10px); /* Add initial slight offset */
+    opacity: 0; /* Start with hidden state */
     padding: 10px 0;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
-    z-index: 99;
+    z-index: 1000; /* Ensure it appears above other content */
 }
 
 .dropdown__menu.show {
+    /* display: block; */
     display: block;
+    transform: translateY(0); /* Remove the offset when visible */
+    opacity: 1; /* Make visible */
 }
 
 .dropdown__item:hover .dropdown__menu {

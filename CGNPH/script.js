@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const navToggle = document.getElementById('nav-toggle');
     const navMenu = document.getElementById('nav-menu');
     const dropdownItems = document.querySelectorAll('.dropdown__item');
-    // const dropdownMenus = document.querySelectorAll('.dropdown__menu');
+    const dropdownMenus = document.querySelectorAll('.dropdown__menu'); // Un-commented and defined dropdownMenus
 
     // Toggle the main nav menu
     navToggle.addEventListener('click', function () {
@@ -41,5 +41,3 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
-
-
