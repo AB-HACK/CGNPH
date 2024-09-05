@@ -568,16 +568,6 @@ body {
     }
 }
 
-/* @media screen and (max-width: 340px) {
-    .container {
-        margin-inline: 10px;
-    }
-
-    .nav__link {
-        padding-inline: 10px;
-    }
-} */
-
 /* For large devices */
 @media screen and (min-width: 1118px) {
     .container {
