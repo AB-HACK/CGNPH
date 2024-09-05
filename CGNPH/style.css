@@ -577,7 +577,7 @@ body {
     .nav__list {
         height: 100%;
         display: flex;
-        column-gap: 48px;
+        column-gap: 58px;
     }
 
     .nav__toggle {
