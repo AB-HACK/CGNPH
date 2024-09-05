@@ -278,6 +278,7 @@ body {
 .features {
     font-size: 20px;
 }
+/* FEATURES section ends */
 
 /* ---- Card seection starts ---- */
 .c-container {
@@ -410,8 +411,11 @@ body {
     color: #fff;
     background: #5372f0;
 }
-
 /* ---- Card seection ends ---- */
+
+/* ---- objectives section starts */
+
+/* ---- objectives section ends */
 
 /* -----footer section starts---- */
 .footer {
@@ -462,7 +466,6 @@ body {
     margin-top: 20px;
     margin-bottom: 10px;
 }
-
 /* ------footer section ends----- */
 
 /* Responsive Styles */
