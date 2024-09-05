@@ -156,6 +156,7 @@ body {
 .nav__toggle.open .nav__close {
     display: block;
 }
+
 /* Navigation Container ends */
 
 
@@ -194,6 +195,7 @@ body {
     font-weight: normal;
     line-height: 1.0;
 }
+
 /* HOME section ends */
 
 
@@ -244,6 +246,7 @@ body {
 .features {
     font-size: 20px;
 }
+
 /* FEATURES section ends */
 
 /* ---- Card seection starts ---- */
@@ -377,18 +380,53 @@ body {
     color: #fff;
     background: #5372f0;
 }
+
 /* ---- Card seection ends ---- */
 
 /* ---- objectives section starts */
+.obj {
+    position: relative;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('media/obj.jpg');
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    z-index: -1;
+    padding-top: 120px;
+    border-top: 6px solid #e8e6e6;
+}
+
+.obj-contents {
+    padding: 20px;
+    text-align: center;
+}
+
+.obj-content h1,
+.obj-content h3 {
+    margin: 10px 5px;
+}
+
+.obj h1 {
+    margin-top: 0px;
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.obj h3 {
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 1.0;
+}
 
 /* ---- objectives section ends */
 
 /* -----footer section starts---- */
 .footer {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.733);
     padding: 50px 15% 10px;
     border-top: 6px solid #333;
-    color: #777;
+    color: #464242;
 }
 
 .footer h2 {
@@ -432,6 +470,7 @@ body {
     margin-top: 20px;
     margin-bottom: 10px;
 }
+
 /* ------footer section ends----- */
 
 /* Responsive Styles */
