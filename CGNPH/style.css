@@ -498,9 +498,9 @@ body {
     }
 
     .nav__link {
-        padding: 20px;
+        padding: 10px;
         text-align: center;
-        font-size: 18px;
+        font-size: 200;
     }
 
     .nav__toggle {
