@@ -19,7 +19,7 @@ body {
     color: white;
 }
 
-/* Navigation Container */
+/* Navigation Container starts */
 .header {
     width: 100%;
 }
@@ -156,8 +156,10 @@ body {
 .nav__toggle.open .nav__close {
     display: block;
 }
+/* Navigation Container ends */
 
-/* HOME */
+
+/* HOME section starts */
 .home {
     position: relative;
     width: 100%;
@@ -192,43 +194,7 @@ body {
     font-weight: normal;
     line-height: 1.0;
 }
-
-
-/* HOME */
-.home {
-    position: relative;
-    width: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('media/312092.jpg');
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    text-align: center;
-    z-index: -1;
-    padding-top: 120px;
-    /* Adjusted for fixed navbar */
-}
-
-.home-content {
-    padding: 20px;
-    text-align: center;
-}
-
-.home-content h1,
-.home-content h3 {
-    margin: 10px 0;
-}
-
-.home h1 {
-    margin-top: 100px;
-    font-size: 45px;
-    margin-bottom: 20px;
-}
-
-.home h3 {
-    font-size: 20px;
-    font-weight: normal;
-    line-height: 1.0;
-}
+/* HOME section ends */
 
 
 /* FEATURES section starts */
@@ -414,7 +380,40 @@ body {
 /* ---- Card seection ends ---- */
 
 /* ---- objectives section starts */
+.home {
+    position: relative;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('media/312092.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    z-index: -1;
+    padding-top: 120px;
+    /* Adjusted for fixed navbar */
+}
 
+.home-content {
+    padding: 20px;
+    text-align: center;
+}
+
+.home-content h1,
+.home-content h3 {
+    margin: 10px 0;
+}
+
+.home h1 {
+    margin-top: 100px;
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.home h3 {
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 1.0;
+}
 /* ---- objectives section ends */
 
 /* -----footer section starts---- */
