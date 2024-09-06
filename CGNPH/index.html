@@ -284,31 +284,31 @@
     <script src="script.js"></script>
 
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
+        document.addEventListener("DOMContentLoaded", function () {
             // Get the modal, button, and close elements
             var modal = document.getElementById("modal");
             var readMoreBtn = document.getElementById("readMoreBtn");
             var closeBtn = document.getElementsByClassName("close-btn")[0];
-    
+
             // When the user clicks the button, open the modal
-            readMoreBtn.onclick = function() {
+            readMoreBtn.onclick = function () {
                 modal.style.display = "flex"; // Display the modal as a flexbox
             }
-    
+
             // When the user clicks on the close button, close the modal
-            closeBtn.onclick = function() {
+            closeBtn.onclick = function () {
                 modal.style.display = "none";
             }
-    
+
             // When the user clicks anywhere outside of the modal, close it
-            window.onclick = function(event) {
+            window.onclick = function (event) {
                 if (event.target == modal) {
                     modal.style.display = "none";
                 }
             }
         });
     </script>
-    
+
 </body>
 
 </html>
