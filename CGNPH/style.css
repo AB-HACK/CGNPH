@@ -12,7 +12,7 @@ body {
     overflow: auto;
     align-items: center;
     min-height: 100vh;
-    background-color: #18191b;
+    background-color: white;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -28,7 +28,7 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: #2d7292de;
+    background-color: #2eb3e7f7;
     padding: 20px;
     z-index: 1000;
 }
@@ -75,7 +75,7 @@ body {
 /* Nav Toggle */
 .nav__toggle {
     display: none;
-    background-color: #337285;
+    background-color: #31be3f;
     border-radius: 5px;
     cursor: pointer;
 }
@@ -99,7 +99,7 @@ body {
     left: 0;
     /* Align with the left edge of the dropdown item */
     width: 300px;
-    background-color: #2d729285;
+    background-color: #2d925085;
     transition: opacity 0.3s ease, transform 0.3s ease;
     transform: translateY(-10px);
     /* Add initial slight offset */
@@ -131,7 +131,7 @@ body {
 }
 
 .dropdown__link:hover {
-    background-color: #1f5f75;
+    background-color: #1f7535;
 }
 
 /* Nav Burger Animation */
@@ -256,7 +256,8 @@ body {
     justify-content: center;
     /* Center cards horizontally */
     min-height: 80vh;
-    background: linear-gradient(#248b9b4d, #2d72923e);
+    /* background: linear-gradient(#54cee14d, #1857753e); */
+    padding-top: 80px;
     border-top: 6px solid #333;
 }
  
@@ -264,7 +265,7 @@ body {
 
 .card-wrapper {
     width: 100%;
-    padding: 20px;
+    padding: 10px;
     overflow: hidden;
 }
 
@@ -283,15 +284,15 @@ body {
 
 .card-list .card-item {
     list-style: none;
-    flex: 1 1 300px;
+    flex: 1 1 500px;
     /* Adjust the card size based on container width */
-    max-width: 300px;
+    max-width: 400px;
     /* Ensure the cards don't get too large */
 }
 
 .card-list .card-link {
     display: block;
-    background: #2d7292de;
+    background: #2e8fbcde;
     padding: 18px;
     border-radius: 12px;
     text-decoration: none;
@@ -356,7 +357,7 @@ body {
 
 .card-list .card-link .card-title {
     font-size: 1.19rem;
-    color: #000;
+    color: white;
     font-weight: 600;
     text-align: center;
     /* Center the text */
@@ -365,7 +366,7 @@ body {
 .card-list .card-link .card-button {
     height: 35px;
     width: 35px;
-    color: #5372f0;
+    color: #1386a0;
     border-radius: 50%;
     margin: 30px auto 5px;
     /* Center the button */
@@ -379,7 +380,7 @@ body {
 
 .card-list .card-link:hover .card-button {
     color: #fff;
-    background: #5372f0;
+    background: #53bcf0;
 }
 
 .link-list {
@@ -397,10 +398,10 @@ body {
 
 .link-list a {
     text-decoration: none;
-    color: #eae5e5;
+    color: #1c3f7b;
     font-size: 18px;
     padding: 10px 15px;
-    border: 1px solid #ddd;
+    border: 1px solid #314560;
     display: inline-block;
     border-radius: 5px;
     transition: background-color 0.3s ease, color 0.3s ease;
@@ -417,7 +418,7 @@ body {
 .obj {
     position: relative;
     width: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('media/obj.jpg  ');
+    background-image: linear-gradient(rgba(28, 82, 123, 0.7), rgba(0, 0, 0, 0.7)), url('media/obj.jpg  ');
     height: 50vh;
     background-size: cover;
     background-position: center;
@@ -452,7 +453,7 @@ body {
 .read-more-btn {
     margin-top: 20px;
     padding: 10px 20px;
-    background-color: #007BFF;
+    background-color: #00aaff;
     color: white;
     border: none;
     border-radius: 5px;
@@ -478,7 +479,7 @@ body {
 }
 
 .modal-content {
-    background-color: white;
+    background-color: rgb(83, 195, 221);
     padding: 20px;
     border-radius: 10px;
     width: 50%;
@@ -505,10 +506,10 @@ body {
 
 /* -----footer section starts---- */
 .footer {
-    background-color: rgba(255, 255, 255, 0.733);
-    padding: 50px 15% 10px;
+    background-color: rgb(255, 255, 255);
+    padding: 10px 15% 1px;
     border-top: 6px solid #0a0a0a;
-    color: #464242;
+    color: #094c6d;
 }
 
 .footer h2 {
