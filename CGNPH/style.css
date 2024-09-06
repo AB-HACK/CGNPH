@@ -606,6 +606,27 @@ body {
         font-size: 15px;
     }
 
+    .card-list {
+        gap: 15px;
+    }
+    
+    .card-list .card-item {
+        flex: 1 1 45%;
+        max-width: 45%; /* Cards take up 45% width on tablet screens */
+    }
+
+    .card-list .card-link {
+        padding: 15px;
+    }
+
+    .card-list .card-link .badge {
+        font-size: 0.9rem;
+    }
+
+    .card-list .card-link .card-title {
+        font-size: 1.1rem;
+    }
+
     .link-list {
         display: flex;
         flex-wrap: wrap;
