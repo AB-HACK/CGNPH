@@ -521,6 +521,33 @@ body {
         /* Adjust padding for smaller screens */
     }
 
+    .card-list {
+        gap: 10px;
+    }
+
+    .card-list .card-item {
+        flex: 1 1 100%;
+        max-width: 100%; /* Cards take full width on mobile screens */
+    }
+
+    .card-list .card-link {
+        padding: 10px;
+    }
+
+    .card-list .card-link .badge {
+        font-size: 0.85rem;
+    }
+
+    .card-list .card-link .card-title {
+        font-size: 1rem;
+    }
+
+    .card-list .card-link .card-button {
+        height: 30px;
+        width: 30px;
+        margin: 20px auto 5px;
+    }
+    
     .link-list {
         padding: 10px;
         margin: 0;
