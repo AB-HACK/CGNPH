@@ -45,9 +45,15 @@ body {
     height: 55px;
 }
 
+.nav__data .nav__logo h4{
+    color: white;
+    font-size: large;
+}
+
 /* Nav Menu */
 .nav__menu {
     display: flex;
+    font-size: 15px;
     justify-content: space-between;
     align-items: center;
 }
@@ -75,7 +81,7 @@ body {
 /* Nav Toggle */
 .nav__toggle {
     display: none;
-    background-color: #31be3f;
+    background-color: #39a7d3;
     border-radius: 5px;
     cursor: pointer;
 }
@@ -99,7 +105,7 @@ body {
     left: 0;
     /* Align with the left edge of the dropdown item */
     width: 300px;
-    background-color: #2d925085;
+    background-color: #40b8d6cd;
     transition: opacity 0.3s ease, transform 0.3s ease;
     transform: translateY(-10px);
     /* Add initial slight offset */
@@ -131,7 +137,7 @@ body {
 }
 
 .dropdown__link:hover {
-    background-color: #1f7535;
+    background-color: #0ec0c6;
 }
 
 /* Nav Burger Animation */
@@ -506,14 +512,14 @@ body {
 
 /* -----footer section starts---- */
 .footer {
-    background-color: rgb(255, 255, 255);
-    padding: 10px 15% 1px;
+    background-color: rgb(38, 151, 203);
+    padding: 50px 5% 50px;
     border-top: 6px solid #0a0a0a;
-    color: #094c6d;
+    color: white;
 }
 
 .footer h2 {
-    font-size: 25px;
+    font-size: 35px;
     font-weight: 0;
     margin-bottom: 15px;
 }
@@ -532,7 +538,7 @@ body {
 .footer .col a {
     display: block;
     text-decoration: none;
-    color: #777;
+    color: #fbefef;
     font-size: 14px;
     margin-bottom: 10px;
 }
@@ -648,7 +654,7 @@ body {
     .nav__menu {
         display: none;
         /* Hidden by default */
-        flex-direction: column;
+        flex-direction: row;
     }
 
     .nav__menu.show {
