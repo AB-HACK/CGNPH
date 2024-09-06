@@ -251,7 +251,7 @@ body {
 
 /* ---- Card seection starts ---- */
 .c-container {
-    display: flex;
+    /* display: flex; */
     align-items: center;
     /* Center cards vertically */
     justify-content: center;
@@ -260,6 +260,7 @@ body {
     background: linear-gradient(#248b9b4d, #2d72923e);
     border-top: 6px solid #333;
 }
+
 
 .card-wrapper {
     width: 100%;
