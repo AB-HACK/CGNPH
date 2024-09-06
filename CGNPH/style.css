@@ -573,6 +573,32 @@ body {
         /* Adjust padding for smaller screens */
     }
 
+    .obj {
+        height: 35vh; /* Further reduce height for very small screens */
+        padding-top: 40px;
+    }
+
+    .obj h1 {
+        font-size: 25px; /* Further decrease font size */
+    }
+
+    .obj h3 {
+        font-size: 14px; /* Further decrease font size */
+    }
+
+    .read-more-btn {
+        padding: 6px 12px; /* Adjust button size */
+    }
+
+    .modal-content {
+        width: 95%; /* Modal almost full-width */
+        padding: 10px; /* Reduce padding */
+    }
+
+    .obj-contents {
+        padding: 10px; /* Reduce padding */
+    }
+
     .card-list {
         gap: 10px;
     }
@@ -683,6 +709,32 @@ body {
 
     .features p {
         font-size: 15px;
+    }
+
+    .obj {
+        height: 40vh; /* Reduce the height for smaller screens */
+        padding-top: 60px; /* Adjust the top padding */
+    }
+
+    .obj h1 {
+        font-size: 30px; /* Decrease font size */
+    }
+
+    .obj h3 {
+        font-size: 16px; /* Decrease font size for smaller screens */
+    }
+
+    .read-more-btn {
+        padding: 8px 16px; /* Adjust button padding */
+    }
+
+    .modal-content {
+        width: 90%; /* Make modal take more width on smaller screens */
+        padding: 15px; /* Adjust padding */
+    }
+
+    .obj-contents {
+        padding: 15px; /* Reduce padding */
     }
 
     .card-list {
