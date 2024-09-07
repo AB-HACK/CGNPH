@@ -206,14 +206,15 @@ body {
 
 /* FEATURES section starts */
 .features {
+    height: 60vh;
     background-color: white;
-    padding: 50px 15% 10px;
+    padding: 50px 15% 1px;
     border-top: 6px solid #333;
     color: black;
 }
 
 .features {
-    padding: 50px 12%;
+    padding: 10px 12%;
     font-size: 22px;
 }
 
@@ -232,12 +233,12 @@ body {
 
 .img-col {
     flex-basis: 50%;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .img-col img {
     display: block;
-    width: 90%;
+    width: 60%;
     margin: auto;
     border-radius: 10%;
 }
@@ -295,7 +296,7 @@ body {
 
 .card-list .card-link {
     display: block;
-    background: #2e8fbcde;
+    background: rgb(38, 151, 203);
     padding: 18px;
     border-radius: 12px;
     text-decoration: none;
@@ -705,6 +706,10 @@ body {
     .text-col,
     .img-col {
         flex-basis: 100%;
+    }
+
+    .features{
+        height: 50vh;
     }
 
     .features h2 {
