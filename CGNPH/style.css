@@ -422,7 +422,7 @@ body {
 .obj {
     position: relative;
     width: 100%;
-    background-image: linear-gradient(rgba(28, 82, 123, 0.7), rgba(0, 0, 0, 0.7)), url('media/obj.jpg');
+    background-image: linear-gradient(rgba(63, 140, 198, 0.7), rgba(28, 80, 106, 0.7)), url('media/obj.jpg');
     height: 50vh;
     background-size: cover;
     background-position: center;
