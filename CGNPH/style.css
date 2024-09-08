@@ -507,7 +507,13 @@ body {
 
 /* ---- objectives section ends */
 
+.log-slide{
+    white-space: nowrap;
+}
 
+.log-slide img{
+    height: 60px;
+}
 
 /* -----footer section starts---- */
 .footer {
