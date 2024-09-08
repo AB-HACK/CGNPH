@@ -524,10 +524,23 @@ body {
     border-top: 6px solid #419dca;
 }
 
+/* .log::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 250;
+    height: 100%;
+    background: #0a0a0a;
+} */
+
+.log:hover .log-slide{
+    animation-play-state: paused;
+}
+
 .log-slide{
     display: inline-block;
     width: max-content; /* Ensures the width fits all images */
-    animation: slide 20s linear infinite; /* Adjust timing and type as needed */
+    animation: slide 35s linear infinite; /* Adjust timing and type as needed */
 }
 
 .log-slide img{
