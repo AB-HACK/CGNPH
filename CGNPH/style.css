@@ -673,6 +673,40 @@ body {
         font-size: 14px; /* Further reduce font size */
         padding: 5px 10px; /* Smaller padding for mobile */
     }
+
+    .log {
+        padding: 30px 0; /* Further reduce padding */
+    }
+
+    .log-slide img {
+        height: 60px; /* Reduce image height for mobile */
+        margin: 0 10px; /* Reduce margin */
+    }
+
+    .footer {
+        padding: 30px 5% 30px; /* Further reduce padding */
+    }
+
+    .footer h2 {
+        font-size: 24px; /* Smaller heading font size */
+    }
+
+    .footer h3 {
+        font-size: 12px; /* Smaller subheading font size */
+    }
+
+    .footer .col {
+        flex-basis: 100%; /* One column per row */
+        margin-bottom: 20px;
+    }
+
+    .footer .col a {
+        font-size: 12px; /* Smaller link font size */
+    }
+
+    .footer .language-btn {
+        padding: 6px 12px; /* Smaller button padding */
+    }
 }
 
 @media (max-width: 768px) {
@@ -832,6 +866,31 @@ body {
     .log-slide img {
         height: 60px; /* Reduce image height */
         margin: 0 20px; /* Reduce margin */
+    }
+
+    .footer {
+        padding: 40px 5% 40px; /* Reduce padding */
+    }
+
+    .footer h2 {
+        font-size: 30px; /* Reduce font size */
+    }
+
+    .footer h3 {
+        font-size: 14px; /* Adjust subheading font size */
+    }
+
+    .footer .col {
+        flex-basis: 50%; /* Two columns per row */
+        margin-bottom: 20px;
+    }
+
+    .footer .col a {
+        font-size: 14px; /* Reduce link font size */
+    }
+
+    .footer .language-btn {
+        padding: 8px 16px; /* Adjust button padding */
     }
 }
 
