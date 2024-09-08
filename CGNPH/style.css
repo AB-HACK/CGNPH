@@ -520,11 +520,12 @@ body {
 .log{
     overflow: hidden;
     padding: 60px 0;
+    white-space: nowrap;
     border-top: 6px solid #419dca;
 }
 
 .log-slide{
-    display: flex;
+    display: inline-block;
     width: max-content; /* Ensures the width fits all images */
     animation: slide 20s linear infinite; /* Adjust timing and type as needed */
 }
