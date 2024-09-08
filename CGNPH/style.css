@@ -524,15 +524,6 @@ body {
     border-top: 6px solid #419dca;
 }
 
-/* .log::before{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 250;
-    height: 100%;
-    background: #0a0a0a;
-} */
-
 .log:hover .log-slide{
     animation-play-state: paused;
 }
@@ -832,6 +823,15 @@ body {
 
     .features .row {
         padding: 10px 0;
+    }
+
+    .log {
+        padding: 40px 0; /* Reduce padding */
+    }
+
+    .log-slide img {
+        height: 60px; /* Reduce image height */
+        margin: 0 20px; /* Reduce margin */
     }
 }
 
