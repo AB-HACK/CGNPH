@@ -521,8 +521,9 @@ body {
     overflow: hidden;
     padding: 60px 0;
     white-space: nowrap;
-    border-top: 6px solid #419dca;
+    /* border-top: 6px solid #419cca9b; */
 }
+
 
 .log:hover .log-slide{
     animation-play-state: paused;
