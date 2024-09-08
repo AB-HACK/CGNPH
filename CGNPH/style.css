@@ -508,12 +508,12 @@ body {
 /* ---- objectives section ends */
 
 /* ---sponsors logo section starts--- */
-@keyframe slide {
-    form{
-        transform: translateX(0);
+@keyframes slide {
+    0% {
+        transform: translateX(0); /* Start from the original position */
     }
-    to{
-        transform: translateX(-100);
+    100% {
+        transform: translateX(-100%); /* Move all images out of view */
     }
 }
 
@@ -524,7 +524,9 @@ body {
 }
 
 .log-slide{
-    white-space: nowrap;
+    display: flex;
+    width: max-content; /* Ensures the width fits all images */
+    animation: slide 20s linear infinite; /* Adjust timing and type as needed */
 }
 
 .log-slide img{
