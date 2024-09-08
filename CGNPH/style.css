@@ -507,13 +507,32 @@ body {
 
 /* ---- objectives section ends */
 
+/* ---sponsors logo section starts--- */
+@keyframe slide {
+    form{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100);
+    }
+}
+
+.log{
+    overflow: hidden;
+    padding: 60px 0;
+    border-top: 6px solid #419dca;
+}
+
 .log-slide{
     white-space: nowrap;
 }
 
 .log-slide img{
-    height: 60px;
+    height: 100px;
+    margin: 0 40px;
 }
+
+/* ---sponsors logo section ends-- */
 
 /* -----footer section starts---- */
 .footer {
