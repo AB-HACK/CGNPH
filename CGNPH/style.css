@@ -212,6 +212,10 @@ body {
     color: black;
 }
 
+.view{
+    justify-items: center;
+}
+
 .features {
     padding: 10px 12%;
     font-size: 22px;
