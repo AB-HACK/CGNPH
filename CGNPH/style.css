@@ -3,7 +3,7 @@
     font-family: "Inter", sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
 
 /* BODY */
@@ -430,7 +430,6 @@ body {
     background-size: cover;
     background-position: center;
     text-align: center;
-    z-index: -1;
     padding-top: 100px;
     border-top: 6px solid #e8e6e6;
 }
@@ -485,7 +484,7 @@ body {
 }
 
 .modal-content {
-    background-color: white;
+    background-color: rgb(63, 144, 201);
     margin: 15% auto; /* 15% from the top and centered */
     padding: 20px;
     border-radius: 8px;
