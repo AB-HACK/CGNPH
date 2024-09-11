@@ -316,15 +316,32 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <script>
-        var modal = document.getElementById("modal");
-        const readMoreBtn = document.querySelector("#readMoreBtn");
-        // var closeBtn = document.getElementsByClassName("close-btn")[0];
+        // Get the modal element
+        const modal = document.getElementById("modal");
 
-        console.log(readMoreBtn)
+        // Get the button that opens the modal
+        const readMoreBtn = document.getElementById("readMoreBtn");
 
-        readMoreBtn.addEventListener('click', function () {
-            console.log('hello')
-        })
+        // Get the <span> element that closes the modal
+        const closeBtn = document.querySelector(".close-btn");
+
+        // When the user clicks the button, open the modal
+        readMoreBtn.onclick = function () {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        closeBtn.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
     </script>
 
     <!-- linking custom script -->
