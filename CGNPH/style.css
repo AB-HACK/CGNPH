@@ -12,7 +12,7 @@ body {
     overflow: auto;
     align-items: center;
     min-height: 100vh;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -209,7 +209,7 @@ body {
     background-color: white;
     padding: 50px 15% 1px;
     border-top: 6px solid #333;
-    color: black;
+    color: maroon;
 }
 
 .view {
@@ -254,6 +254,7 @@ body {
 
 .features {
     font-size: 20px;
+    font-weight: 500;
 }
 
 /* FEATURES section ends */
@@ -515,7 +516,7 @@ li {
 
 .card-list .card-link:hover .card-button {
     color: #fff;
-    background: #1b5e7f;
+    background: green;
 }
 
 .link-list {
@@ -627,6 +628,7 @@ li {
     text-decoration: none;
     color: #fbefef;
     font-size: 18px;
+    font-weight: 500;
     margin-bottom: 10px;
     color: rgb(148, 16, 16);
 }
