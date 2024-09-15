@@ -485,7 +485,7 @@ body {
 
 .modal-content {
     background-color: rgb(63, 144, 201);
-    margin: 20% auto; /* 15% from the top and centered */
+    margin: 15% auto; /* 15% from the top and centered */
     padding: 50px;
     border-radius: 8px;
     width: 90%; /* Width of modal */
@@ -495,7 +495,7 @@ body {
 .close-btn {
     color: #e6eaea;
     float: right;
-    font-size: 28px;
+    font-size: 30px;
     font-weight: bold;
     cursor: pointer;
 }
@@ -528,6 +528,7 @@ ul {
 
 li {
     margin-bottom: 10px;
+    text-align: left;
 }
 
 /* ---- objectives section ends */
