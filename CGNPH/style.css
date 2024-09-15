@@ -386,8 +386,16 @@ li {
     /* Center cards horizontally */
     min-height: 80vh;
     /* background: linear-gradient(#54cee14d, #1857753e); */
-    padding-top: 80px;
+    padding-top: 40px;
     border-top: 6px solid #333;
+}
+
+.c-container h2 {
+    color: #118545;
+    font-size: 40px;
+    justify-content: center;
+    margin-bottom: 20px;
+    display: flex;
 }
 
 .card-wrapper {
