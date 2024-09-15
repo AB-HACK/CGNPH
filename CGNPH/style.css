@@ -45,7 +45,7 @@ body {
     height: 55px;
 }
 
-.nav__data .nav__logo h4{
+.nav__data .nav__logo h4 {
     color: white;
     font-size: large;
 }
@@ -212,7 +212,7 @@ body {
     color: black;
 }
 
-.view{
+.view {
     justify-items: center;
 }
 
@@ -310,22 +310,29 @@ body {
 
 /* Modal styling */
 .modal {
-    display: none; /* Hidden by default */
+    display: none;
+    /* Hidden by default */
     position: fixed;
-    z-index: 1; /* Sit on top */
+    z-index: 1;
+    /* Sit on top */
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Black background with opacity */
 }
 
 .modal-content {
     background-color: rgb(63, 144, 201);
-    margin: 15% auto; /* 15% from the top and centered */
+    margin: 15% auto;
+    /* 15% from the top and centered */
     padding: 50px;
     border-radius: 8px;
-    width: 90%; /* Width of modal */
+    width: 90%;
+    /* Width of modal */
     max-width: 900px;
 }
 
@@ -382,7 +389,7 @@ li {
     padding-top: 80px;
     border-top: 6px solid #333;
 }
- 
+
 .card-wrapper {
     width: 100%;
     padding: 10px;
@@ -537,32 +544,41 @@ li {
 /* ---sponsors logo section starts--- */
 @keyframes slide {
     0% {
-        transform: translateX(0); /* Start from the original position */
+        transform: translateX(0);
+        /* Start from the original position */
     }
+
     100% {
-        transform: translateX(-100%); /* Move all images out of view */
+        transform: translateX(-100%);
+        /* Move all images out of view */
     }
 }
 
-.log{
+.log {
     overflow: hidden;
     padding: 60px 0;
     white-space: nowrap;
-    /* border-top: 6px solid #419cca9b; */
+}
+
+.log h2 {
+    color: #00aaff;
+    justify-content: center;
 }
 
 
-.log:hover .log-slide{
+.log:hover .log-slide {
     animation-play-state: paused;
 }
 
-.log-slide{
+.log-slide {
     display: inline-block;
-    width: max-content; /* Ensures the width fits all images */
-    animation: slide 35s linear infinite; /* Adjust timing and type as needed */
+    width: max-content;
+    /* Ensures the width fits all images */
+    animation: slide 35s linear infinite;
+    /* Adjust timing and type as needed */
 }
 
-.log-slide img{
+.log-slide img {
     height: 100px;
     margin: 0 40px;
 }
@@ -642,29 +658,36 @@ li {
     }
 
     .obj {
-        height: 35vh; /* Further reduce height for very small screens */
+        height: 35vh;
+        /* Further reduce height for very small screens */
         padding-top: 40px;
     }
 
     .obj h1 {
-        font-size: 25px; /* Further decrease font size */
+        font-size: 25px;
+        /* Further decrease font size */
     }
 
     .obj h3 {
-        font-size: 14px; /* Further decrease font size */
+        font-size: 14px;
+        /* Further decrease font size */
     }
 
     .read-more-btn {
-        padding: 6px 12px; /* Adjust button size */
+        padding: 6px 12px;
+        /* Adjust button size */
     }
 
     .modal-content {
-        width: 95%; /* Modal almost full-width */
-        padding: 10px; /* Reduce padding */
+        width: 95%;
+        /* Modal almost full-width */
+        padding: 10px;
+        /* Reduce padding */
     }
 
     .obj-contents {
-        padding: 10px; /* Reduce padding */
+        padding: 10px;
+        /* Reduce padding */
     }
 
     .card-list {
@@ -673,7 +696,8 @@ li {
 
     .card-list .card-item {
         flex: 1 1 100%;
-        max-width: 100%; /* Cards take full width on mobile screens */
+        max-width: 100%;
+        /* Cards take full width on mobile screens */
     }
 
     .card-list .card-link {
@@ -693,49 +717,60 @@ li {
         width: 30px;
         margin: 20px auto 5px;
     }
-    
+
     .link-list {
         padding: 10px;
         margin: 0;
     }
 
     .link-list a {
-        font-size: 14px; /* Further reduce font size */
-        padding: 5px 10px; /* Smaller padding for mobile */
+        font-size: 14px;
+        /* Further reduce font size */
+        padding: 5px 10px;
+        /* Smaller padding for mobile */
     }
 
     .log {
-        padding: 30px 0; /* Further reduce padding */
+        padding: 30px 0;
+        /* Further reduce padding */
     }
 
     .log-slide img {
-        height: 60px; /* Reduce image height for mobile */
-        margin: 0 10px; /* Reduce margin */
+        height: 60px;
+        /* Reduce image height for mobile */
+        margin: 0 10px;
+        /* Reduce margin */
     }
 
     .footer {
-        padding: 30px 5% 30px; /* Further reduce padding */
+        padding: 30px 5% 30px;
+        /* Further reduce padding */
     }
 
     .footer h2 {
-        font-size: 24px; /* Smaller heading font size */
+        font-size: 24px;
+        /* Smaller heading font size */
     }
 
     .footer h3 {
-        font-size: 12px; /* Smaller subheading font size */
+        font-size: 12px;
+        /* Smaller subheading font size */
     }
 
     .footer .col {
-        flex-basis: 100%; /* One column per row */
+        flex-basis: 100%;
+        /* One column per row */
         margin-bottom: 20px;
     }
 
     .footer .col a {
-        font-size: 12px; /* Smaller link font size */
+        font-size: 12px;
+        /* Smaller link font size */
     }
 
     .footer .language-btn {
-        padding: 6px 12px; /* Smaller button padding */
+        padding: 6px 12px;
+        /* Smaller button padding */
     }
 }
 
@@ -805,7 +840,7 @@ li {
         flex-basis: 100%;
     }
 
-    .features{
+    .features {
         height: 50vh;
     }
 
@@ -818,38 +853,47 @@ li {
     }
 
     .obj {
-        height: 40vh; /* Reduce the height for smaller screens */
-        padding-top: 60px; /* Adjust the top padding */
+        height: 40vh;
+        /* Reduce the height for smaller screens */
+        padding-top: 60px;
+        /* Adjust the top padding */
     }
 
     .obj h1 {
-        font-size: 30px; /* Decrease font size */
+        font-size: 30px;
+        /* Decrease font size */
     }
 
     .obj h3 {
-        font-size: 16px; /* Decrease font size for smaller screens */
+        font-size: 16px;
+        /* Decrease font size for smaller screens */
     }
 
     .read-more-btn {
-        padding: 8px 16px; /* Adjust button padding */
+        padding: 8px 16px;
+        /* Adjust button padding */
     }
 
     .modal-content {
-        width: 90%; /* Make modal take more width on smaller screens */
-        padding: 20px; /* Adjust padding */
+        width: 90%;
+        /* Make modal take more width on smaller screens */
+        padding: 20px;
+        /* Adjust padding */
     }
 
     .obj-contents {
-        padding: 15px; /* Reduce padding */
+        padding: 15px;
+        /* Reduce padding */
     }
 
     .card-list {
         gap: 15px;
     }
-    
+
     .card-list .card-item {
         flex: 1 1 45%;
-        max-width: 45%; /* Cards take up 45% width on tablet screens */
+        max-width: 45%;
+        /* Cards take up 45% width on tablet screens */
     }
 
     .card-list .card-link {
@@ -867,17 +911,22 @@ li {
     .link-list {
         display: flex;
         flex-wrap: wrap;
-        padding: 20px; /* Reduce padding */
-        margin: 5px; /* Adjust margin */
+        padding: 20px;
+        /* Reduce padding */
+        margin: 5px;
+        /* Adjust margin */
     }
 
     .link-list li {
-        margin-bottom: 15px; /* Increase spacing between items */
+        margin-bottom: 15px;
+        /* Increase spacing between items */
     }
 
     .link-list a {
-        font-size: 16px; /* Reduce font size */
-        padding: 8px 12px; /* Adjust padding */
+        font-size: 16px;
+        /* Reduce font size */
+        padding: 8px 12px;
+        /* Adjust padding */
     }
 
     .row:nth-child(2),
@@ -890,37 +939,46 @@ li {
     }
 
     .log {
-        padding: 40px 0; /* Reduce padding */
+        padding: 40px 0;
+        /* Reduce padding */
     }
 
     .log-slide img {
-        height: 60px; /* Reduce image height */
-        margin: 0 20px; /* Reduce margin */
+        height: 60px;
+        /* Reduce image height */
+        margin: 0 20px;
+        /* Reduce margin */
     }
 
     .footer {
-        padding: 40px 5% 40px; /* Reduce padding */
+        padding: 40px 5% 40px;
+        /* Reduce padding */
     }
 
     .footer h2 {
-        font-size: 30px; /* Reduce font size */
+        font-size: 30px;
+        /* Reduce font size */
     }
 
     .footer h3 {
-        font-size: 14px; /* Adjust subheading font size */
+        font-size: 14px;
+        /* Adjust subheading font size */
     }
 
     .footer .col {
-        flex-basis: 50%; /* Two columns per row */
+        flex-basis: 50%;
+        /* Two columns per row */
         margin-bottom: 20px;
     }
 
     .footer .col a {
-        font-size: 14px; /* Reduce link font size */
+        font-size: 14px;
+        /* Reduce link font size */
     }
 
     .footer .language-btn {
-        padding: 8px 16px; /* Adjust button padding */
+        padding: 8px 16px;
+        /* Adjust button padding */
     }
 }
 
