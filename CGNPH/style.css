@@ -562,7 +562,10 @@ li {
 
 .log h2 {
     color: #00aaff;
+    font-size: 40px;
     justify-content: center;
+    margin-bottom: 20px;
+    display: flex;
 }
 
 
