@@ -833,7 +833,7 @@ li {
 
     .modal-content {
         width: 90%; /* Make modal take more width on smaller screens */
-        padding: 15px; /* Adjust padding */
+        padding: 20px; /* Adjust padding */
     }
 
     .obj-contents {
