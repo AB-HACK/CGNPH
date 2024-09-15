@@ -533,6 +533,9 @@ li {
 /* ---- objectives section ends */
 
 /* ---sponsors logo section starts--- */
+.h3{
+    color: #1386a0;
+}
 @keyframes slide {
     0% {
         transform: translateX(0); /* Start from the original position */
