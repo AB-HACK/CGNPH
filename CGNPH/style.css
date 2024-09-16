@@ -139,8 +139,11 @@ body {
 .dropdown__link {
     color: #fff;
     padding: 10px 5px;
-    display: block;
-    white-space: nowrap;
+    /* display: block; */
+    display: flex;
+  align-items: center;
+  column-gap: .5rem;
+    white-space: nowrap; 
 }
 
 .dropdown__link:hover {
@@ -176,7 +179,7 @@ body {
 .home {
     position: relative;
     width: 100%;
-    background-image: linear-gradient(rgba(121, 150, 149, 0.52), rgba(71, 97, 99, 0.7)), url('media/bg2image.jpeg');
+    background-image: linear-gradient(rgba(29, 31, 31, 0.52), rgba(26, 29, 29, 0.7)), url('media/background.webp');
     height: 100vh;
     background-size: cover;
     background-position: center;
@@ -822,6 +825,10 @@ li {
         display: flex;
     }
 
+    .nav__list{
+        font-size: 0px;
+    }
+
     .nav__link {
         padding: 10px;
         text-align: center;
@@ -836,10 +843,14 @@ li {
     }
 
     .dropdown__menu {
-        position: static;
-        transform: none;
-        width: 100%;
-        box-shadow: none;
+        max-height: initial;
+        overflow: initial;
+        position: absolute;
+        left: 0;
+        top: 6rem;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity .3s, top .3s;
     }
 
     .dropdown__item:hover .dropdown__menu {
