@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 
-/*------ Responsive typography -----*/
+/*----- Responsive typography -----*/
 @media screen and (min-width: 1024px) {
     :root {
         --normal-font-size: 1rem;
