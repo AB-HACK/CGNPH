@@ -6,6 +6,7 @@
     box-sizing: border-box;
 }
 
+/*------ Responsive typography -----*/
 @media screen and (min-width: 1024px) {
     :root {
         --normal-font-size: 1rem;
@@ -659,6 +660,17 @@ li {
 /* ------footer section ends----- */
 
 /* Responsive Styles */
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+@media screen and (max-width: 340px) {
+    .container {
+      margin-inline: 1rem;
+    }
+  
+    .nav__link {
+      padding-inline: 1rem;
+    }
+  }
 /* General Styles as previously defined */
 @media (max-width: 480px) {
     .nav__link {
