@@ -933,8 +933,22 @@ li {
     }
 
     .home {
-        padding-top: 140px;
+        padding-top: 50px;
         /* Increase padding for mobile */
+    }
+
+    #folktale-content {
+        font-size: 14px;
+        padding: 15px;
+        max-width: 90%;
+        margin: 20px auto;
+    }
+
+    #read-more-btn {
+        font-size: 14px;
+        padding: 7px 12px;
+        bottom: 10px;
+        right: 10px;
     }
 
     .text-col,
