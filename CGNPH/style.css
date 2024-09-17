@@ -185,12 +185,12 @@ body {
     background-position: center;
     text-align: center;
     z-index: -1;
-    padding-top: 120px;
+    padding-top: 80px;
     /* Adjusted for fixed navbar */
 }
 
 .home-content {
-    padding: 20px;
+    padding: 5px;
     text-align: center;
 }
 
@@ -205,10 +205,32 @@ body {
     margin-bottom: 20px;
 }
 
-.home h3 {
+.home p {
     font-size: 20px;
     font-weight: normal;
     line-height: 1.0;
+    justify-content: center;
+}
+
+#folktale-content {
+    overflow: hidden;
+    max-height: 150px;
+    /* Adjust based on the height you want before showing the "Read More" button */
+    text-overflow: ellipsis;
+    transition: max-height 0.3s ease-out;
+}
+
+#read-more-btn {
+    display: block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #cdd7e1;
+    /* Button color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
 }
 
 /* HOME section ends */

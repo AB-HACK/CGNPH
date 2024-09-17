@@ -66,3 +66,18 @@ document.addEventListener("DOMContentLoaded", function () {
          modal.style.display = "none";
      }
  }
+
+ document.addEventListener('DOMContentLoaded', function () {
+    const readMoreBtn = document.getElementById('read-more-btn');
+    const folktaleContent = document.getElementById('folktale-content');
+
+    readMoreBtn.addEventListener('click', function () {
+        if (folktaleContent.style.maxHeight === 'none') {
+            folktaleContent.style.maxHeight = '150px'; // Adjust based on initial max-height
+            readMoreBtn.textContent = 'Read More';
+        } else {
+            folktaleContent.style.maxHeight = 'none';
+            readMoreBtn.textContent = 'Read Less';
+        }
+    });
+});
