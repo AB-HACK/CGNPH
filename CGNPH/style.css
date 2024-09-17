@@ -141,9 +141,9 @@ body {
     padding: 10px 5px;
     /* display: block; */
     display: flex;
-  align-items: center;
-  column-gap: .5rem;
-    white-space: nowrap; 
+    align-items: center;
+    column-gap: .5rem;
+    white-space: nowrap;
 }
 
 .dropdown__link:hover {
@@ -214,7 +214,8 @@ body {
 
 /* Styling for the content and button */
 #folktale-content {
-    font-family: 'Inter', sans-serif; /* User's preferred font */
+    font-family: 'Inter', sans-serif;
+    /* User's preferred font */
     font-size: 17px;
     color: #eaeef0;
     line-height: 1.6;
@@ -224,13 +225,15 @@ body {
     max-width: 1000px;
     margin: 10px auto;
     overflow: hidden;
-    max-height: 160px; /* Initial collapsed height */
+    max-height: 160px;
+    /* Initial collapsed height */
     transition: max-height 0.3s ease;
     position: relative;
 }
 
 #folktale-content.expanded {
-    max-height: 1000px; /* Expanded height when content is revealed */
+    max-height: 1000px;
+    /* Expanded height when content is revealed */
 }
 
 #read-more-btn {
@@ -727,13 +730,14 @@ li {
 /* For small devices */
 @media screen and (max-width: 340px) {
     .container {
-      margin-inline: 1rem;
+        margin-inline: 1rem;
     }
-  
+
     .nav__link {
-      padding-inline: 1rem;
+        padding-inline: 1rem;
     }
-  }
+}
+
 /* General Styles as previously defined */
 @media (max-width: 480px) {
     .nav__link {
@@ -765,7 +769,7 @@ li {
         font-size: 16px;
     }
 
-    .home-content h1, 
+    .home-content h1,
     .home-content h3 {
         margin: 4px 0;
     }
@@ -919,7 +923,7 @@ li {
         display: flex;
     }
 
-    .nav__list{
+    .nav__list {
         font-size: 0px;
     }
 
@@ -976,7 +980,7 @@ li {
         margin-top: 80px;
     }
 
-    .home-content h1, 
+    .home-content h1,
     .home-content h3 {
         margin: 5px 0;
     }
@@ -998,7 +1002,7 @@ li {
         bottom: 0px;
         right: 10px;
     }
-}
+
 
 
     .text-col,
