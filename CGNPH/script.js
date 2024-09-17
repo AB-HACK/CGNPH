@@ -66,3 +66,17 @@ window.onclick = function (event) {
         modal.style.display = "none";
     }
 }
+
+// JavaScript to toggle between showing more/less content
+document.getElementById("read-more-btn").addEventListener("click", function() {
+    var content = document.getElementById("folktale-content");
+
+    // Toggle expanded class and button text
+    if (content.classList.contains("expanded")) {
+        content.classList.remove("expanded");
+        this.textContent = "Read More";
+    } else {
+        content.classList.add("expanded");
+        this.textContent = "Read Less";
+    }
+});
