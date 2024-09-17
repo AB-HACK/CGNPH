@@ -751,6 +751,40 @@ li {
         /* Adjust padding for smaller screens */
     }
 
+    .home {
+        height: 90vh;
+        padding-top: 40px;
+    }
+
+    .home h1 {
+        font-size: 28px;
+        margin-top: 60px;
+    }
+
+    .home p {
+        font-size: 16px;
+    }
+
+    .home-content h1, 
+    .home-content h3 {
+        margin: 4px 0;
+    }
+
+    #folktale-content {
+        font-size: 14px;
+        max-width: 95%;
+        max-height: 120px;
+        padding: 5px;
+        margin: 0 auto;
+    }
+
+    #read-more-btn {
+        font-size: 13px;
+        padding: 5px 10px;
+        bottom: 0px;
+        right: 10px;
+    }
+
     .obj {
         height: 35vh;
         /* Further reduce height for very small screens */
@@ -933,9 +967,39 @@ li {
     }
 
     .home {
-        padding-top: 140px;
-        /* Increase padding for mobile */
+        height: 100vh;
+        padding-top: 75px;
     }
+
+    .home h1 {
+        font-size: 30px;
+        margin-top: 80px;
+    }
+
+    .home-content h1, 
+    .home-content h3 {
+        margin: 5px 0;
+    }
+
+    .home-content {
+        padding: 5px;
+    }
+
+    #folktale-content {
+        font-size: 12px;
+        max-width: 100%;
+        max-height: 140px;
+        padding: 5px;
+    }
+
+    #read-more-btn {
+        font-size: 14px;
+        padding: 6px 12px;
+        bottom: 0px;
+        right: 10px;
+    }
+}
+
 
     .text-col,
     .img-col {
