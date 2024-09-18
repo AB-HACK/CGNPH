@@ -179,7 +179,7 @@ body {
 .home {
     position: relative;
     width: 100%;
-    background-image: linear-gradient(rgba(29, 31, 31, 0.52), rgba(26, 29, 29, 0.7)), url('media/background.webp');
+    background-image: linear-gradient(rgba(60, 63, 63, 0.52), rgba(48, 50, 50, 0.7)), url('media/background.webp');
     height: 110vh;
     background-size: cover;
     background-position: center;
@@ -676,6 +676,8 @@ li {
     padding: 50px 10% 50px;
     border-top: 6px solid #0a0a0a;
     color: white;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .footer h2 {
@@ -1233,4 +1235,5 @@ li {
         pointer-events: initial;
         transition: top 0.3s;
     }
+    
 }
