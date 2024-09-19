@@ -906,64 +906,55 @@ li {
         position: static;
     }
 
-    .nav__menu {
-        display: none;
-        /* Hidden by default */
-        flex-direction: row;
-    }
-
-    .nav__menu.show {
-        display: flex;
-    }
-
     .nav__toggle {
         display: block;
     }
 
     .nav__menu {
-        display: none; /* Hide the menu initially for mobile */
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: rgba(46, 179, 231, 0.97);
+        flex-direction: column;
+        align-items: flex-start;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+    }
+
+    .nav__menu.active {
+        max-height: 500px; /* Arbitrary high value to allow full menu display */
     }
 
     .nav__list {
-        font-size: 0px;
+        flex-direction: column;
+        width: 100%;
     }
 
     .nav__link {
-        padding: 10px;
-        text-align: center;
-        font-size: 200;
+        width: 100%;
+        padding: 1rem 2rem;
     }
 
-    .nav__toggle {
-        display: block;
-        position: absolute;
-        top: 10px;
-        right: 20px;
-    }
-
+    /* Adjust dropdown menu for mobile */
     .dropdown__menu {
-        max-height: initial;
-        overflow: initial;
-        position: absolute;
-        left: 0;
-        top: 6rem;
-        opacity: 0;
-        pointer-events: none;
-        transition: opacity .3s, top .3s;
+        position: static;
+        width: 100%;
+        background-color: rgba(64, 184, 214, 0.95);
+        transform: translateY(0);
+        opacity: 1;
+        padding: 0;
+        box-shadow: none;
+        border-radius: 0;
     }
 
-    .dropdown__item:hover .dropdown__menu {
+    .dropdown__menu.active {
         display: block;
-        background-color: rgba(45, 114, 146, 0.95);
     }
 
-    .nav__data {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .nav__logo img {
-        height: 40px;
+    .dropdown__link {
+        padding: 1rem 3rem;
     }
 
     h4 {
