@@ -96,7 +96,8 @@ body {
     transition: color var(--transition-duration);
 }
 
-.nav__link:hover, .nav__link:focus {
+.nav__link:hover,
+.nav__link:focus {
     color: var(--hover-text-color);
     border-radius: 5px;
 }
@@ -139,7 +140,8 @@ body {
     transition: background-color var(--transition-duration);
 }
 
-.dropdown__menu .dropdown__link:hover, .dropdown__menu .dropdown__link:focus {
+.dropdown__menu .dropdown__link:hover,
+.dropdown__menu .dropdown__link:focus {
     background-color: var(--hover-bg-color);
 }
 
@@ -182,6 +184,7 @@ body {
 
 /* Responsive Styles */
 @media (max-width: 768px) {
+
     /* Hide the menu initially for mobile */
     .nav__menu {
         position: fixed;
@@ -199,7 +202,7 @@ body {
     }
 
     /* Show the menu when toggle is open */
-    .nav__toggle.open + .nav__menu {
+    .nav__toggle.open+.nav__menu {
         left: 0;
     }
 
@@ -697,7 +700,7 @@ li {
     color: #21be67;
     font-size: 40px;
     justify-content: center;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     display: flex;
 }
 
@@ -712,6 +715,7 @@ li {
     /* Ensures the width fits all images */
     animation: slide 35s linear infinite;
     /* Adjust timing and type as needed */
+    margin-bottom: 50px;
 }
 
 .log-slide img {
@@ -724,8 +728,10 @@ li {
 /* -----footer section starts---- */
 /* Footer Styling */
 .footer {
-    background: linear-gradient(135deg, #289ecdf7, #15617f); /* Smoother gradient with two complementary tones */
-    color: #f4f4f4; /* Light color for better contrast on dark background */
+    background: linear-gradient(135deg, #289ecdf7, #15617f);
+    /* Smoother gradient with two complementary tones */
+    color: #f4f4f4;
+    /* Light color for better contrast on dark background */
     font-weight: 500;
     padding: 40px 0;
     font-family: 'Inter', sans-serif;
@@ -761,14 +767,16 @@ li {
     margin-bottom: 20px;
     font-size: 16px;
     line-height: 1.7;
-    color: #f4f4f4; /* Light text color for better readability */
+    color: #f4f4f4;
+    /* Light text color for better readability */
 }
 
 /* Footer Title */
 .footer__title {
     font-size: 20px;
     margin-bottom: 15px;
-    color: #00e67e; /* A bright accent color to stand out */
+    color: #00e67e;
+    /* A bright accent color to stand out */
 }
 
 /* Footer List */
@@ -782,14 +790,16 @@ li {
 }
 
 .footer__list li a {
-    color: #f4f4f4; /* Light color for link */
+    color: #f4f4f4;
+    /* Light color for link */
     text-decoration: none;
     font-size: 16px;
     transition: color 0.3s ease;
 }
 
 .footer__list li a:hover {
-    color: #00e67e; /* Hover effect with accent color */
+    color: #00e67e;
+    /* Hover effect with accent color */
 }
 
 /* Footer Contact List */
@@ -801,7 +811,8 @@ li {
 .footer__contact-list li {
     margin-bottom: 10px;
     font-size: 16px;
-    color: #f4f4f4; /* Consistent text color */
+    color: #f4f4f4;
+    /* Consistent text color */
 }
 
 .footer__contact-list li a {
@@ -810,7 +821,8 @@ li {
 }
 
 .footer__contact-list li a:hover {
-    color: #00e67e; /* Accent color on hover */
+    color: #00e67e;
+    /* Accent color on hover */
 }
 
 /* Social Media Icons */
