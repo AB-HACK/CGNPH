@@ -1,24 +1,42 @@
-// Toggle mobile menu
+// Get elements from the DOM
 const navToggle = document.getElementById('nav-toggle');
 const navMenu = document.getElementById('nav-menu');
 const navBurger = document.querySelector('.nav__burger');
 const navClose = document.querySelector('.nav__close');
+const dropdownItems = document.querySelectorAll('.dropdown__item');
 
+// Toggle mobile menu
 navToggle.addEventListener('click', () => {
     navMenu.classList.toggle('active');
-    navBurger.classList.toggle('hidden');
-    navClose.classList.toggle('hidden');
+    
+    // Toggle the icons (burger and close)
+    if (navBurger.style.display === 'none') {
+        navBurger.style.display = 'block';
+        navClose.style.display = 'none';
+    } else {
+        navBurger.style.display = 'none';
+        navClose.style.display = 'block';
+    }
 });
 
 // Handle dropdowns
-const dropdownToggles = document.querySelectorAll('.dropdown__toggle');
+dropdownItems.forEach(item => {
+    const toggle = item.querySelector('.dropdown__toggle');
+    const dropdownMenu = item.querySelector('.dropdown__menu');
 
-dropdownToggles.forEach(toggle => {
     toggle.addEventListener('click', () => {
-        const dropdownMenu = toggle.nextElementSibling;
+        // Toggle the display of the dropdown menu
         dropdownMenu.style.display = dropdownMenu.style.display === 'block' ? 'none' : 'block';
     });
+
+    // Hide dropdown when clicking outside
+    document.addEventListener('click', function(event) {
+        if (!item.contains(event.target)) {
+            dropdownMenu.style.display = 'none';
+        }
+    });
 });
+
 
 // Get the modal element
 const modal = document.getElementById("modal");

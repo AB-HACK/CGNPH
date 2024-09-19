@@ -96,32 +96,44 @@ body {
 
 .dropdown__item {
     position: relative;
-  }
-  
-  .dropdown__toggle {
+}
+
+.dropdown__toggle {
     cursor: pointer;
-  }
-  
-  .dropdown__menu {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #333;
+}
+
+.dropdown__menu {
     display: none;
-    list-style: none;
-  }
-  
-  .dropdown__menu .dropdown__link {
+    position: absolute;
+    /* Adjust position to suit your layout */
+    top: 100%;
+    /* Align with the bottom of the dropdown item */
+    left: 30px;
+    /* Align with the left edge of the dropdown item */
+    width: 200px;
+    background-color: #40b8d6cd;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    transform: translateY(-10px);
+    /* Add initial slight offset */
+    opacity: 0;
+    /* Start with hidden state */
+    padding: 5px -50px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    /* Ensure it appears above other content */
+}
+
+.dropdown__menu .dropdown__link {
     color: white;
     padding: 0.75rem 1rem;
     display: block;
     text-decoration: none;
-  }
-  
-  .dropdown__menu .dropdown__link:hover {
-    background-color: #444;
-  }
-  
+}
+
+.dropdown__menu .dropdown__link:hover {
+    background-color: #0ec0c6;
+}
+
 /* Nav Burger Animation */
 .nav__burger,
 .nav__close {
@@ -134,6 +146,11 @@ body {
 }
 
 .nav__close {
+    display: none;
+}
+
+/* Toggle for mobile */
+.nav__toggle {
     display: none;
 }
 
@@ -897,6 +914,14 @@ li {
 
     .nav__menu.show {
         display: flex;
+    }
+
+    .nav__toggle {
+        display: block;
+    }
+
+    .nav__menu {
+        display: none; /* Hide the menu initially for mobile */
     }
 
     .nav__list {
