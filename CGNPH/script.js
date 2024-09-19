@@ -1,46 +1,25 @@
-document.addEventListener("DOMContentLoaded", function () {
-    // Get the elements
-    const navToggle = document.getElementById('nav-toggle');
-    const navMenu = document.getElementById('nav-menu');
-    const dropdownItems = document.querySelectorAll('.dropdown__item');
-    const dropdownMenus = document.querySelectorAll('.dropdown__menu'); // Un-commented and defined dropdownMenus
+// Toggle mobile menu
+const navToggle = document.getElementById('nav-toggle');
+const navMenu = document.getElementById('nav-menu');
+const navBurger = document.querySelector('.nav__burger');
+const navClose = document.querySelector('.nav__close');
 
-    // Toggle the main nav menu
-    navToggle.addEventListener('click', function () {
-        navMenu.classList.toggle('show');
-        navToggle.classList.toggle('open');
-    });
+navToggle.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+    navBurger.classList.toggle('hidden');
+    navClose.classList.toggle('hidden');
+});
 
-    // Handle dropdown menu toggle on click
-    dropdownItems.forEach(item => {
-        item.addEventListener('click', function (e) {
-            e.stopPropagation(); // Prevent click event from bubbling up
+// Handle dropdowns
+const dropdownToggles = document.querySelectorAll('.dropdown__toggle');
 
-            // Close other dropdown menus if open
-            dropdownMenus.forEach(menu => {
-                if (menu !== item.querySelector('.dropdown__menu')) {
-                    menu.classList.remove('show');
-                }
-            });
-
-            // Toggle the dropdown menu for the clicked item
-            const menu = item.querySelector('.dropdown__menu');
-            menu.classList.toggle('show');
-        });
-    });
-
-    // Close the navbar and dropdowns if a click happens outside of it
-    document.addEventListener('click', function (e) {
-        if (!navMenu.contains(e.target) && !navToggle.contains(e.target)) {
-            navMenu.classList.remove('show'); // Close the navbar
-            navToggle.classList.remove('open'); // Reset the toggle button
-
-            dropdownMenus.forEach(menu => {
-                menu.classList.remove('show'); // Close all dropdowns
-            });
-        }
+dropdownToggles.forEach(toggle => {
+    toggle.addEventListener('click', () => {
+        const dropdownMenu = toggle.nextElementSibling;
+        dropdownMenu.style.display = dropdownMenu.style.display === 'block' ? 'none' : 'block';
     });
 });
+
 // Get the modal element
 const modal = document.getElementById("modal");
 

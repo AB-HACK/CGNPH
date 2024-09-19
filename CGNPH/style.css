@@ -67,23 +67,23 @@ body {
 
 /* Nav List */
 .nav__list {
-    display: table-column;
-    justify-content: center;
-    transition: all .50s ease;
+    display: flex;
     list-style: none;
 }
 
 /* Nav Links */
 .nav__link {
-    color: #ffffff;
+    color: white;
     text-decoration: none;
-    padding: 10px 15px;
-    font-weight: 500;
-    transition: color 0.4s;
+    padding: 0.75rem 1rem;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
 }
 
 .nav__link:hover {
     color: #181b19;
+    border-radius: 5px;
 }
 
 /* Nav Toggle */
@@ -94,63 +94,34 @@ body {
     cursor: pointer;
 }
 
-/* Dropdown Item */
 .dropdown__item {
     position: relative;
-}
-
-/* Rotate dropdown icon */
-.dropdown__item:hover .dropdown__arrow {
-    transform: rotate(180deg);
-}
-
-.dropdown__menu {
-    display: none;
+  }
+  
+  .dropdown__toggle {
+    cursor: pointer;
+  }
+  
+  .dropdown__menu {
     position: absolute;
-    /* Adjust position to suit your layout */
     top: 100%;
-    /* Align with the bottom of the dropdown item */
-    left: 30px;
-    /* Align with the left edge of the dropdown item */
-    width: 200px;
-    background-color: #40b8d6cd;
-    transition: opacity 0.3s ease, transform 0.3s ease;
-    transform: translateY(-10px);
-    /* Add initial slight offset */
-    opacity: 0;
-    /* Start with hidden state */
-    padding: 5px -50px;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
-    z-index: 1000;
-    /* Ensure it appears above other content */
-}
-
-.dropdown__menu.show {
+    left: 0;
+    background-color: #333;
+    display: none;
+    list-style: none;
+  }
+  
+  .dropdown__menu .dropdown__link {
+    color: white;
+    padding: 0.75rem 1rem;
     display: block;
-    transform: translateY(0);
-    /* Remove the offset when visible */
-    opacity: 1;
-    /* Make visible */
-}
-
-.dropdown__item:hover .dropdown__menu {
-    display: block;
-}
-
-.dropdown__link {
-    color: #fff;
-    padding: 10px 5px;
-    /* display: block; */
-    display: flex;
-    align-items: center;
-    column-gap: .5rem;
-    white-space: nowrap;
-}
-
-.dropdown__link:hover {
-    background-color: #0ec0c6;
-}
-
+    text-decoration: none;
+  }
+  
+  .dropdown__menu .dropdown__link:hover {
+    background-color: #444;
+  }
+  
 /* Nav Burger Animation */
 .nav__burger,
 .nav__close {
@@ -1238,5 +1209,5 @@ li {
         pointer-events: initial;
         transition: top 0.3s;
     }
-    
+
 }
