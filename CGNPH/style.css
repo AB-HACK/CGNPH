@@ -67,7 +67,8 @@ body {
 
 /* Nav List */
 .nav__list {
-    display: flex;
+    display: table-column;
+    justify-content: center;
     transition: all .50s ease;
     list-style: none;
 }
@@ -749,8 +750,9 @@ li {
     }
 
     .dropdown__menu {
-        width: 100%;
+        width: 150%;
         /* Make dropdown full width on small screens */
+        margin-top: -50px;
     }
 
     .dropdown__link {
