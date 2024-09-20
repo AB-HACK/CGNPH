@@ -46,6 +46,7 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
+    border-radius: 15px;
     background-color: var(--primary-bg-color);
     padding: 8px;
     z-index: 1000;
@@ -55,8 +56,9 @@ body {
 /* Nav Data (Main Layout) */
 .nav__data {
     display: flex;
+    justify-content: flex-end;
     justify-content: space-between;
-    align-items: center;
+    /* align-items: right; */
 }
 
 /* Nav Logo */
