@@ -635,7 +635,7 @@ li {
     /* Center the button */
     background: none;
     cursor: pointer;
-    border: 2px solid #5372f0;
+    border: 2px solid #dadce6;
     transform: rotate(-45deg);
     transition: 0.4s ease;
     display: block;
