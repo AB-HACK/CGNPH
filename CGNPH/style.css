@@ -240,7 +240,7 @@ body {
     background-position: center;
     text-align: center;
     /* z-index: -1; */
-    padding-top: 60px;
+    padding-top: 80px;
     /* Adjusted for fixed navbar */
 }
 
@@ -994,7 +994,7 @@ li {
     .modal-content {
         width: 95%;
         /* Modal almost full-width */
-        padding: 10px;
+        padding: 30px;
         /* Reduce padding */
     }
 
@@ -1226,7 +1226,7 @@ li {
     .modal-content {
         width: 90%;
         /* Make modal take more width on smaller screens */
-        padding: 20px;
+        padding: 50px;
         /* Adjust padding */
     }
 
