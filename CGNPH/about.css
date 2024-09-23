@@ -331,3 +331,136 @@ body {
 }
 
 /* HOME section ends */
+
+/* -----footer section starts---- */
+/* Footer Styling */
+.footer {
+    background: linear-gradient(135deg, #289ecdf7, #15617f);
+    /* Smoother gradient with two complementary tones */
+    color: #f4f4f4;
+    /* Light color for better contrast on dark background */
+    font-weight: 500;
+    padding: 40px 0;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Footer Container */
+.footer__container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 30px;
+    padding-left: 90px;
+}
+
+/* Section Styles */
+.footer__about,
+.footer__links,
+.footer__contact,
+.footer__social {
+    text-align: left;
+}
+
+/* Footer Logo */
+.footer__logo {
+    width: 120px;
+    margin-bottom: 15px;
+}
+
+/* Footer Description */
+.footer__desc {
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #f4f4f4;
+    /* Light text color for better readability */
+}
+
+/* Footer Title */
+.footer__title {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #00e67e;
+    /* A bright accent color to stand out */
+}
+
+/* Footer List */
+.footer__list {
+    list-style: none;
+    padding: 0;
+}
+
+.footer__list li {
+    margin-bottom: 10px;
+}
+
+.footer__list li a {
+    color: #f4f4f4;
+    /* Light color for link */
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.footer__list li a:hover {
+    color: #00e67e;
+    /* Hover effect with accent color */
+}
+
+/* Footer Contact List */
+.footer__contact-list {
+    list-style: none;
+    padding: 0;
+}
+
+.footer__contact-list li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #f4f4f4;
+    /* Consistent text color */
+}
+
+.footer__contact-list li a {
+    color: #f4f4f4;
+    text-decoration: none;
+}
+
+.footer__contact-list li a:hover {
+    color: #00e67e;
+    /* Accent color on hover */
+}
+
+/* Social Media Icons */
+.footer__social-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.social__link {
+    font-size: 24px;
+    color: #f4f4f4;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social__link:hover {
+    color: #00e67e;
+    transform: scale(1.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer__container {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer__container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ------footer section ends----- */
