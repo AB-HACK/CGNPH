@@ -40,7 +40,7 @@ dropdownItems.forEach(item => {
     });
 
     // Hide dropdown when clicking outside
-    document.addEventListener('click', function(event) {
+    document.addEventListener('click', function (event) {
         if (!item.contains(event.target)) {
             dropdownMenu.style.display = 'none';
             console.log('Hid dropdown menu due to outside click');
@@ -76,16 +76,18 @@ window.onclick = function (event) {
     }
 }
 
-// JavaScript to toggle between showing more/less content
-document.getElementById("read-more-btn").addEventListener("click", function() {
-    var content = document.getElementById("folktale-content");
+document.querySelectorAll('.read-more-btn').forEach(button => {
+    button.addEventListener('click', () => {
+        const moreText = button.previousElementSibling.querySelector('.more-text');
 
-    // Toggle expanded class and button text
-    if (content.classList.contains("expanded")) {
-        content.classList.remove("expanded");
-        this.textContent = "Read More";
-    } else {
-        content.classList.add("expanded");
-        this.textContent = "Read Less";
-    }
+        // Toggle the visibility of the more text
+        if (moreText.style.display === 'inline') {
+            moreText.style.display = 'none';
+            button.textContent = 'Read More';
+        } else {
+            moreText.style.display = 'inline';
+            button.textContent = 'Read Less';
+        }
+    });
 });
+
