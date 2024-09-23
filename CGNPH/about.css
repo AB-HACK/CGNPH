@@ -1,0 +1,333 @@
+/* Basic Reset */
+* {
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*----- Responsive typography -----*/
+@media screen and (min-width: 1024px) {
+    :root {
+        --normal-font-size: 1rem;
+    }
+}
+
+/* BODY */
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    overflow: auto;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(255, 255, 255);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+}
+
+/* Navigation Container starts */
+.header {
+    width: 100%;
+}
+
+:root {
+    --primary-bg-color: #2eb3e7;
+    --primary-text-color: white;
+    --hover-bg-color: #0ec0c6;
+    --hover-text-color: #079436;
+    --menu-bg-color: #40b8d6cd;
+    --dropdown-shadow: rgba(0, 0, 0, 0.3);
+    --transition-duration: 0.3s;
+}
+
+/* Navbar Container */
+.nav-container {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    border-radius: 15px;
+    background-color: var(--primary-bg-color);
+    padding: 8px;
+    z-index: 1000;
+    transition: background-color var(--transition-duration);
+}
+
+/* Nav Data (Main Layout) */
+.nav__data {
+    display: flex;
+    justify-content: flex-end;
+    justify-content: space-between;
+    /* align-items: right; */
+}
+
+/* Nav Logo */
+.nav__logo img {
+    height: 65px;
+}
+
+.nav__logo h4 {
+    color: rgb(15, 141, 59);
+    font-size: large;
+    margin-left: 8px;
+}
+
+/* Nav Menu */
+.nav__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+}
+
+/* Nav List */
+.nav__list {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+/* Nav Links */
+.nav__link {
+    color: var(--primary-text-color);
+    text-decoration: none;
+    padding: 0.75rem 1rem;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    transition: color var(--transition-duration);
+}
+
+.nav__link:hover,
+.nav__link:focus {
+    color: var(--hover-text-color);
+    border-radius: 5px;
+}
+
+.nav__link:focus {
+    outline: 2px solid var(--hover-text-color);
+    outline-offset: 2px;
+}
+
+/* Dropdown Item */
+.dropdown__item {
+    position: relative;
+}
+
+.dropdown__toggle {
+    cursor: pointer;
+}
+
+/* Dropdown Menu */
+.dropdown__menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 200px;
+    background-color: var(--menu-bg-color);
+    padding: 5px 0;
+    box-shadow: 0px 8px 16px var(--dropdown-shadow);
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity var(--transition-duration), transform var(--transition-duration);
+    z-index: 1000;
+}
+
+.dropdown__menu .dropdown__link {
+    color: var(--primary-text-color);
+    padding: 0.75rem 1rem;
+    display: block;
+    text-decoration: none;
+    transition: background-color var(--transition-duration);
+}
+
+.dropdown__menu .dropdown__link:hover,
+.dropdown__menu .dropdown__link:focus {
+    background-color: var(--hover-bg-color);
+}
+
+/* Dropdown Show on Hover */
+.dropdown__item:hover .dropdown__menu {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Mobile Toggle Button */
+.nav__toggle {
+    display: none;
+    background-color: var(--primary-bg-color);
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.nav__burger,
+.nav__close {
+    font-size: 24px;
+    color: var(--primary-text-color);
+    transition: transform var(--transition-duration);
+}
+
+.nav__close {
+    display: none;
+}
+
+/* Toggle Button for Mobile (open/close animation) */
+.nav__toggle.open .nav__burger {
+    display: none;
+}
+
+.nav__toggle.open .nav__close {
+    display: block;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+
+    /* Hide the menu initially for mobile */
+    .nav__menu {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        flex-direction: column;
+        background-color: var(--primary-bg-color);
+        height: 100vh;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        transition: left var(--transition-duration);
+        z-index: 999;
+    }
+
+    /* Show the menu when toggle is open */
+    .nav__toggle.open+.nav__menu {
+        left: 0;
+    }
+
+    /* Display the toggle button */
+    .nav__toggle {
+        display: block;
+    }
+
+    /* Adjust the dropdowns for mobile */
+    .dropdown__menu {
+        position: relative;
+        left: 0;
+        width: 100%;
+        box-shadow: none;
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    .dropdown__item:hover .dropdown__menu {
+        display: block;
+    }
+}
+
+/* Navigation Container ends */
+
+/* HOME section starts */
+.home {
+    position: relative;
+    width: 100%;
+    background-image: linear-gradient(rgba(60, 63, 63, 0.52), rgba(48, 50, 50, 0.7)), url('media/background.webp');
+    height: 110vh;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    /* z-index: -1; */
+    padding-top: 80px;
+    /* Adjusted for fixed navbar */
+}
+
+.home-content {
+    padding: 5px;
+    text-align: center;
+}
+
+.home-content h1,
+.home-content h3 {
+    margin: 9px 0;
+}
+
+.home h1 {
+    margin-top: 100px;
+    font-size: 45px;
+    margin-bottom: 20px;
+    color: #32e181;
+}
+
+.home p {
+    /* font-size: 20px; */
+    font-weight: normal;
+    line-height: 1.0;
+    justify-content: center;
+}
+
+/* Styling for the content and button */
+#folktale-content {
+    font-family: 'Inter', sans-serif;
+    /* User's preferred font */
+    font-size: 17px;
+    color: #eaeef0;
+    line-height: 1.6;
+    padding: 2px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 1000px;
+    margin: 10px auto;
+    overflow: hidden;
+    max-height: 160px;
+    /* Initial collapsed height */
+    transition: max-height 0.3s ease;
+    position: relative;
+}
+
+#folktale-content.expanded {
+    max-height: 1000px;
+    /* Expanded height when content is revealed */
+}
+
+#read-more-btn {
+    display: inline-block;
+    margin-top: 1px;
+    padding: 8px 15px;
+    font-size: 15px;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: absolute;
+    bottom: -1px;
+    right: 10px;
+}
+
+#read-more-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Add fade effect at the bottom for long content */
+#folktale-content::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    background: linear-gradient(to top, #9e9c9c, rgba(249, 249, 249, 0));
+    display: block;
+    pointer-events: none;
+    transition: opacity 0.3s;
+}
+
+#folktale-content.expanded::after {
+    opacity: 0;
+}
+
+/* HOME section ends */
