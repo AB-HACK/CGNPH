@@ -1091,7 +1091,7 @@ li {
 
     .home {
         height: 100vh;
-        padding-top: 360px;
+        padding-top: 200px;
     }
 
     .home h1 {
@@ -1375,11 +1375,11 @@ li {
 /* Tablet Screens (min-width: 768px and max-width: 1023px) */
 @media (min-width: 768px) and (max-width: 1023px) {
     .nav__logo img {
-        height: 55px;
+        height: 40px;
     }
 
     .nav__menu {
-        font-size: 18px;
+        font-size: 15px;
     }
 
     .nav__link {
@@ -1388,90 +1388,5 @@ li {
 
     .dropdown__menu {
         width: 180px;
-    }
-}
-
-/* Laptops and Desktops (1024px to 1117px) */
-@media (min-width: 1024px) and (max-width: 1117px) {
-    .nav__menu {
-        justify-content: space-between;
-        font-size: 20px;
-    }
-
-    .nav__list {
-        gap: 20px;
-    }
-
-    .nav__link {
-        font-size: 16px;
-        padding: 0.75rem 1rem;
-    }
-
-    .dropdown__menu {
-        width: 200px;
-    }
-}
-
-/* Large Devices (min-width: 1118px) */
-@media (min-width: 1118px) {
-    .nav__link {
-        height: 100%;
-        padding: 0;
-        justify-content: initial;
-        column-gap: 0.25rem;
-    }
-
-    .nav__list {
-        padding-top: 1rem;
-        height: 100%;
-        display: flex;
-        column-gap: 58px;
-    }
-
-    .nav__toggle {
-        display: none;
-    }
-
-    .dropdown__menu {
-        max-height: initial;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        opacity: 0;
-        pointer-events: none;
-        transition: opacity 0.3s, top 0.3s;
-    }
-
-    .dropdown__item:hover .dropdown__menu {
-        opacity: 1;
-        top: 50px;
-        pointer-events: initial;
-    }
-}
-
-/* Small Tablets (min-width: 480px and max-width: 767px) */
-@media (min-width: 480px) and (max-width: 767px) {
-    .nav__logo img {
-        height: 50px;
-    }
-
-    .nav__menu {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        font-size: 16px;
-    }
-
-    .nav__list {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .nav__link {
-        padding: 0.5rem 1rem;
-    }
-
-    .dropdown__menu {
-        width: 160px;
     }
 }
