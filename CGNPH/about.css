@@ -464,3 +464,681 @@ body {
 }
 
 /* ------footer section ends----- */
+
+/* Responsive Styles */
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+@media screen and (max-width: 340px) {
+    .container {
+        margin-inline: 1rem;
+    }
+
+    .nav__link {
+        padding-inline: 1rem;
+    }
+}
+
+/* General Styles as previously defined */
+@media (max-width: 479px) {
+
+    /* Stack logo and toggle button */
+    .nav__data {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav__logo img {
+        height: 45px;
+    }
+
+    /* Toggle the mobile menu */
+    .nav__menu {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100vh;
+        background-color: var(--primary-bg-color);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        transition: left 0.3s ease;
+    }
+
+    /* Show the menu when toggle is open */
+    .nav__toggle.open+.nav__menu {
+        left: 0;
+    }
+
+    .nav__list {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav__link {
+        font-size: 18px;
+        padding: 1rem;
+    }
+
+    .dropdown__menu {
+        width: 100%;
+        position: relative;
+        left: 0;
+        box-shadow: none;
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    /* Mobile Toggle Button */
+    .nav__toggle {
+        display: block;
+    }
+
+    /* Adjust the dropdown toggle for mobile */
+    .dropdown__item:hover .dropdown__menu {
+        display: block;
+    }
+
+    .home {
+        height: 90vh;
+        padding-top: 40px;
+    }
+
+    .home h1 {
+        font-size: 28px;
+        margin-top: 60px;
+    }
+
+    .home p {
+        font-size: 16px;
+    }
+
+    .home-content h1,
+    .home-content h3 {
+        margin: 4px 0;
+    }
+
+    #folktale-content {
+        font-size: 14px;
+        max-width: 95%;
+        max-height: 120px;
+        padding: 5px;
+        margin: 0 auto;
+    }
+
+    #read-more-btn {
+        font-size: 13px;
+        padding: 5px 10px;
+        bottom: 0px;
+        right: 10px;
+    }
+
+    .obj {
+        height: 35vh;
+        /* Further reduce height for very small screens */
+        padding-top: 40px;
+    }
+
+    .obj h1 {
+        font-size: 25px;
+        /* Further decrease font size */
+    }
+
+    .obj h3 {
+        font-size: 14px;
+        /* Further decrease font size */
+    }
+
+    .read-more-btn {
+        padding: 6px 12px;
+        /* Adjust button size */
+    }
+
+    .modal-content {
+        width: 95%;
+        /* Modal almost full-width */
+        padding: 30px;
+        /* Reduce padding */
+    }
+
+    .obj-contents {
+        padding: 10px;
+        /* Reduce padding */
+    }
+
+    .card-list {
+        gap: 10px;
+    }
+
+    .card-list .card-item {
+        flex: 1 1 100%;
+        max-width: 100%;
+        /* Cards take full width on mobile screens */
+    }
+
+    .card-list .card-link {
+        padding: 10px;
+    }
+
+    .card-list .card-link .badge {
+        font-size: 0.85rem;
+    }
+
+    .card-list .card-link .card-title {
+        font-size: 1rem;
+    }
+
+    .card-list .card-link .card-button {
+        height: 30px;
+        width: 30px;
+        margin: 20px auto 5px;
+    }
+
+    .link-list {
+        padding: 10px;
+        margin: 0;
+    }
+
+    .link-list a {
+        font-size: 14px;
+        /* Further reduce font size */
+        padding: 5px 10px;
+        /* Smaller padding for mobile */
+    }
+
+    .log {
+        padding: 30px 0;
+        /* Further reduce padding */
+    }
+
+    .log-slide img {
+        height: 60px;
+        /* Reduce image height for mobile */
+        margin: 0 10px;
+        /* Reduce margin */
+    }
+
+    .footer {
+        padding: 30px 5% 30px;
+        /* Further reduce padding */
+    }
+
+    .footer h2 {
+        font-size: 24px;
+        /* Smaller heading font size */
+    }
+
+    .footer h3 {
+        font-size: 12px;
+        /* Smaller subheading font size */
+    }
+
+    .footer .col {
+        flex-basis: 100%;
+        /* One column per row */
+        margin-bottom: 20px;
+    }
+
+    .footer .col a {
+        font-size: 12px;
+        /* Smaller link font size */
+    }
+
+    .footer .language-btn {
+        padding: 6px 12px;
+        /* Smaller button padding */
+    }
+}
+
+@media (max-width: 767px) {
+    .header {
+        width: 100%;
+        height: auto;
+        position: static;
+    }
+
+    .nav__toggle {
+        display: block;
+    }
+
+    .nav__menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: rgba(46, 179, 231, 0.97);
+        flex-direction: column;
+        align-items: flex-start;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+    }
+
+    .nav__menu.active {
+        max-height: 500px;
+        /* Arbitrary high value to allow full menu display */
+    }
+
+    .nav__list {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav__link {
+        width: 100%;
+        padding: 1rem 2rem;
+    }
+
+    /* Adjust dropdown menu for mobile */
+    .dropdown__menu {
+        /* position: static; */
+        width: 160px;
+        /* background-color: rgba(64, 184, 214, 0.95);
+        transform: translateY(0);
+        opacity: 1;
+        padding: 0;
+        box-shadow: none;
+        border-radius: 0; */
+    }
+
+    .dropdown__menu.active {
+        display: block;
+    }
+
+    .dropdown__link {
+        padding: 1rem 3rem;
+    }
+
+    h4 {
+        font-size: 14px;
+        margin: 10px 0;
+    }
+
+    .home {
+        height: 100vh;
+        padding-top: 360px;
+    }
+
+    .home h1 {
+        font-size: 40px;
+        margin-top: 200px;
+    }
+
+    .home-content h1,
+    .home-content h3 {
+        font-size: 18px;
+        margin: 5px 0;
+    }
+
+    .home-content {
+        padding: 5px;
+    }
+
+    #folktale-content {
+        font-size: 12px;
+        max-width: 100%;
+        max-height: 140px;
+        padding: 5px;
+    }
+
+    #read-more-btn {
+        font-size: 14px;
+        padding: 6px 12px;
+        bottom: 0px;
+        right: 10px;
+    }
+
+    .text-col,
+    .img-col {
+        flex-basis: 100%;
+    }
+
+    .features {
+        height: 50vh;
+    }
+
+    .features h2 {
+        font-size: 30px;
+    }
+
+    .features p {
+        font-size: 15px;
+    }
+
+    .obj {
+        height: 40vh;
+        /* Reduce the height for smaller screens */
+        padding-top: 60px;
+        /* Adjust the top padding */
+    }
+
+    .obj h1 {
+        font-size: 30px;
+        /* Decrease font size */
+    }
+
+    .obj h3 {
+        font-size: 16px;
+        /* Decrease font size for smaller screens */
+    }
+
+    .read-more-btn {
+        padding: 8px 16px;
+        /* Adjust button padding */
+    }
+
+    .modal-content {
+        width: 90%;
+        /* Make modal take more width on smaller screens */
+        padding: 50px;
+        /* Adjust padding */
+    }
+
+    .obj-contents {
+        padding: 15px;
+        /* Reduce padding */
+    }
+
+    .card-list {
+        gap: 15px;
+    }
+
+    .card-list .card-item {
+        flex: 1 1 45%;
+        max-width: 45%;
+        /* Cards take up 45% width on tablet screens */
+    }
+
+    .card-list .card-link {
+        padding: 15px;
+    }
+
+    .card-list .card-link .badge {
+        font-size: 0.9rem;
+    }
+
+    .card-list .card-link .card-title {
+        font-size: 1.1rem;
+    }
+
+    .link-list {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px;
+        /* Reduce padding */
+        margin: 5px;
+        /* Adjust margin */
+    }
+
+    .link-list li {
+        margin-bottom: 15px;
+        /* Increase spacing between items */
+    }
+
+    .link-list a {
+        font-size: 16px;
+        /* Reduce font size */
+        padding: 8px 12px;
+        /* Adjust padding */
+    }
+
+    .row:nth-child(2),
+    .row:nth-child(4) {
+        flex-direction: column-reverse;
+    }
+
+    .features .row {
+        padding: 10px 0;
+    }
+
+    .log {
+        padding: 40px 0;
+        /* Reduce padding */
+    }
+
+    .log-slide img {
+        height: 60px;
+        /* Reduce image height */
+        margin: 0 20px;
+        /* Reduce margin */
+    }
+
+    .footer {
+        padding: 40px 5% 40px;
+        /* Reduce padding */
+    }
+
+    .footer h2 {
+        font-size: 30px;
+        /* Reduce font size */
+    }
+
+    .footer h3 {
+        font-size: 14px;
+        /* Adjust subheading font size */
+    }
+
+    .footer .col {
+        flex-basis: 50%;
+        /* Two columns per row */
+        margin-bottom: 20px;
+    }
+
+    .footer .col a {
+        font-size: 14px;
+        /* Reduce link font size */
+    }
+
+    .footer .language-btn {
+        padding: 8px 16px;
+        /* Adjust button padding */
+    }
+}
+
+/* For large devices */
+@media screen and (min-width: 1118px) {
+    .container {
+        margin-inline: auto;
+    }
+
+    .nav__link {
+        height: 100%;
+        padding: 0;
+        justify-content: initial;
+        column-gap: .25rem;
+    }
+
+    .nav__link:hover {
+        background-color: transparent;
+    }
+
+    .nav__list {
+        padding-top: 1rem;
+        height: 100%;
+        display: flex;
+        column-gap: 58px;
+    }
+
+    .nav__toggle {
+        display: none;
+    }
+
+    .nav__link {
+        height: 100%;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        column-gap: 4px;
+    }
+
+    .nav__link:hover {
+        background-color: transparent;
+    }
+
+    .dropdown__item,
+    .dropdown__subitem {
+        position: relative;
+    }
+
+    .dropdown__menu,
+    .dropdown__submenu {
+        max-height: initial;
+        overflow: initial;
+        position: absolute;
+        left: 0;
+        top: 60px;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s, top 0.3s;
+    }
+
+    .dropdown__link,
+    .dropdown__sublink {
+        padding: 10px 56px;
+    }
+
+    .dropdown__submenu {
+        position: absolute;
+        left: 100%;
+        top: 8px;
+    }
+
+    /* Show dropdown menu */
+    .dropdown__item:hover .dropdown__menu {
+        opacity: 1;
+        top: 50px;
+        pointer-events: initial;
+        transition: top 0.3s;
+    }
+
+    /* Show dropdown submenu */
+    .dropdown__subitem:hover>.dropdown__submenu {
+        opacity: 1;
+        top: 0;
+        pointer-events: initial;
+        transition: top 0.3s;
+    }
+
+}
+
+@media (min-width: 1024px) {
+    .nav__menu {
+        justify-content: space-between;
+        font-size: 20px;
+    }
+
+    .nav__list {
+        gap: 20px;
+    }
+
+    .nav__link {
+        font-size: 16px;
+        padding: 0.75rem 1rem;
+    }
+}
+
+/* Tablet Screens (min-width: 768px and max-width: 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .nav__logo img {
+        height: 55px;
+    }
+
+    .nav__menu {
+        font-size: 18px;
+    }
+
+    .nav__link {
+        font-size: 15px;
+    }
+
+    .dropdown__menu {
+        width: 180px;
+    }
+}
+
+/* Laptops and Desktops (1024px to 1117px) */
+@media (min-width: 1024px) and (max-width: 1117px) {
+    .nav__menu {
+        justify-content: space-between;
+        font-size: 20px;
+    }
+
+    .nav__list {
+        gap: 20px;
+    }
+
+    .nav__link {
+        font-size: 16px;
+        padding: 0.75rem 1rem;
+    }
+
+    .dropdown__menu {
+        width: 200px;
+    }
+}
+
+/* Large Devices (min-width: 1118px) */
+@media (min-width: 1118px) {
+    .nav__link {
+        height: 100%;
+        padding: 0;
+        justify-content: initial;
+        column-gap: 0.25rem;
+    }
+
+    .nav__list {
+        padding-top: 1rem;
+        height: 100%;
+        display: flex;
+        column-gap: 58px;
+    }
+
+    .nav__toggle {
+        display: none;
+    }
+
+    .dropdown__menu {
+        max-height: initial;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s, top 0.3s;
+    }
+
+    .dropdown__item:hover .dropdown__menu {
+        opacity: 1;
+        top: 50px;
+        pointer-events: initial;
+    }
+}
+
+/* Small Tablets (min-width: 480px and max-width: 767px) */
+@media (min-width: 480px) and (max-width: 767px) {
+    .nav__logo img {
+        height: 50px;
+    }
+
+    .nav__menu {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        font-size: 16px;
+    }
+
+    .nav__list {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav__link {
+        padding: 0.5rem 1rem;
+    }
+
+    .dropdown__menu {
+        width: 160px;
+    }
+}
