@@ -876,12 +876,12 @@ li {
 
     .home {
         height: 90vh;
-        padding-top: 40px;
+        padding-top: 50px;
     }
 
     .home h1 {
-        font-size: 28px;
-        margin-top: 60px;
+        font-size: 29px;
+        margin-top: 150px;
     }
 
     .home p {
