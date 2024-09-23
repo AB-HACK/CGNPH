@@ -76,18 +76,21 @@ window.onclick = function (event) {
     }
 }
 
-document.querySelectorAll('.read-more-btn').forEach(button => {
-    button.addEventListener('click', () => {
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('.read-more-btn').forEach(button => {
+      button.addEventListener('click', () => {
         const moreText = button.previousElementSibling.querySelector('.more-text');
-
+  
         // Toggle the visibility of the more text
         if (moreText.style.display === 'inline') {
-            moreText.style.display = 'none';
-            button.textContent = 'Read More';
+          moreText.style.display = 'none';
+          button.textContent = 'Read More';
         } else {
-            moreText.style.display = 'inline';
-            button.textContent = 'Read Less';
+          moreText.style.display = 'inline';
+          button.textContent = 'Read Less';
         }
+      });
     });
-});
+  });
+  
 
