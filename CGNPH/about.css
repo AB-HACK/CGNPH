@@ -740,8 +740,9 @@ body {
 
     /* Adjust dropdown menu for mobile */
     .dropdown__menu {
-        /* position: static; */
+        position: static;
         width: 160px;
+        font-size: 12px;
         /* background-color: rgba(64, 184, 214, 0.95);
         transform: translateY(0);
         opacity: 1;
