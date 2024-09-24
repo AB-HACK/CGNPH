@@ -275,17 +275,18 @@ body {
     font-size: 17px;
     color: #eaeef0;
     line-height: 1.6;
-    padding: 2px;
+    padding: 19px;
     border-radius: 10px;
     background-color: #1d9cc68e;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.622);
+    overflow-y: auto;
     max-width: 800px;
     margin: 10px auto;
-    overflow: hidden;
-    max-height: 160px;
+    /* overflow: hidden; */
+    max-height: 300px;
     /* Initial collapsed height */
-    transition: max-height 0.3s ease;
-    position: relative;
+    /* transition: max-height 0.3s ease;
+    position: relative; */
 }
 
 #folktale-content.expanded {
@@ -293,42 +294,47 @@ body {
     /* Expanded height when content is revealed */
 }
 
-#read-more-btn {
-    display: inline-block;
-    margin-top: 1px;
-    padding: 8px 15px;
-    font-size: 15px;
-    color: #fff;
-    background-color: #007BFF;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    position: absolute;
-    bottom: -1px;
-    right: 10px;
+#folktale-content::-webkit-scrollbar {
+    width: 8px;
 }
 
-#read-more-btn:hover {
-    background-color: #0056b3;
+#folktale-content::-webkit-scrollbar-thumb {
+    background-color: #f3efef; /* Optional: scrollbar thumb color */
+    border-radius: 4px;
 }
 
-/* Add fade effect at the bottom for long content */
-#folktale-content::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 50px;
-    background: linear-gradient(to top, #9e9c9c, rgba(249, 249, 249, 0));
-    display: block;
-    pointer-events: none;
-    transition: opacity 0.3s;
+#folktale-content::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Change color on hover */
 }
 
-#folktale-content.expanded::after {
-    opacity: 0;
+/* Basic scrollbar styling */
+#folktale-content::-webkit-scrollbar {
+    width: 8px;
+    transition: width 0.3s ease; /* Smooth transition for width */
+}
+
+#folktale-content::-webkit-scrollbar-thumb {
+    background-color: #2eb3e7; /* Initial thumb color */
+    border-radius: 4px;
+    transition: background-color 0.3s ease, height 0.3s ease; /* Smooth transitions for color and height */
+}
+
+/* Hover animation */
+#folktale-content::-webkit-scrollbar-thumb:hover {
+    background-color: #0ec0c6; /* Change color on hover */
+    height: 50px; /* Increase height on hover */
+}
+
+/* Active animation (when dragging the scrollbar) */
+#folktale-content::-webkit-scrollbar-thumb:active {
+    background-color: #e5eae6; /* Change color when active (clicked/dragged) */
+    width: 12px; /* Expand width while dragging */
+    transition: width 0.2s ease; /* Smoothly transition width back after dragging */
+}
+
+/* Wider scrollbar on hover for better user interaction */
+#folktale-content:hover::-webkit-scrollbar {
+    width: 12px; /* Expand scrollbar width when hovering over the container */
 }
 
 /* HOME section ends */
@@ -780,15 +786,8 @@ body {
     #folktale-content {
         font-size: 12px;
         max-width: 100%;
-        max-height: 140px;
+        max-height: 290px;
         padding: 5px;
-    }
-
-    #read-more-btn {
-        font-size: 14px;
-        padding: 6px 12px;
-        bottom: 0px;
-        right: 10px;
     }
 
     .text-col,
