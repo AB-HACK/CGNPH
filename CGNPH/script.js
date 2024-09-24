@@ -95,16 +95,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-function toggleContent() {
-    var content = document.getElementById("folktale-content");
-    var button = document.querySelector(".toggle-button");
-    if (content.classList.contains("hidden")) {
-        content.classList.remove("hidden");
-        button.textContent = "Show Less";
-    } else {
-        content.classList.add("hidden");
-        button.textContent = "Show More";
-    }
-}
+
 
 
