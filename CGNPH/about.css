@@ -334,7 +334,7 @@ body {
 
 /* Wider scrollbar on hover for better user interaction */
 #folktale-content:hover::-webkit-scrollbar {
-    width: 10px; /* Expand scrollbar width when hovering over the container */
+    width: 12px; /* Expand scrollbar width when hovering over the container */
 }
 
 /* HOME section ends */
