@@ -76,21 +76,35 @@ window.onclick = function (event) {
     }
 }
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     document.querySelectorAll('.read-more-btn').forEach(button => {
-      button.addEventListener('click', () => {
-        const moreText = button.previousElementSibling.querySelector('.more-text');
-  
-        // Toggle the visibility of the more text
-        if (moreText.style.display === 'inline') {
-          moreText.style.display = 'none';
-          button.textContent = 'Read More';
-        } else {
-          moreText.style.display = 'inline';
-          button.textContent = 'Read Less';
-        }
-      });
+        button.addEventListener('click', () => {
+            const moreText = button.previousElementSibling.querySelector('.more-text');
+
+            // Toggle the visibility of the more text
+            if (moreText.style.display === 'inline') {
+                moreText.style.display = 'none';
+                button.textContent = 'Read More';
+            } else {
+                moreText.style.display = 'inline';
+                button.textContent = 'Read Less';
+            }
+        });
     });
-  });
-  
+});
+
+
+
+function toggleContent() {
+    var content = document.getElementById("folktale-content");
+    var button = document.querySelector(".toggle-button");
+    if (content.classList.contains("hidden")) {
+        content.classList.remove("hidden");
+        button.textContent = "Show Less";
+    } else {
+        content.classList.add("hidden");
+        button.textContent = "Show More";
+    }
+}
+
 

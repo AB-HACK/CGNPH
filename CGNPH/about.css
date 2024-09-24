@@ -272,12 +272,12 @@ body {
 #folktale-content {
     font-family: 'Inter', sans-serif;
     /* User's preferred font */
-    font-size: 17px;
+    font-size: 20px;
     color: #eaeef0;
     line-height: 1.6;
     padding: 19px;
     border-radius: 10px;
-    background-color: #1d9cc68e;
+    background-color: #14637d8e;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.622);
     overflow-y: auto;
     max-width: 800px;
